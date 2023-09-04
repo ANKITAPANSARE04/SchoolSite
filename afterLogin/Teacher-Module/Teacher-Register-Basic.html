@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- used links below -->
+    <link rel="stylesheet" href="../css/Style.css" />
+    <link rel="stylesheet" href="../css/air-datepicker.css" />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- bootstrap 5 --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
+  </head>
+  <body>
+ 
+    <!-- topnav -->
+    <nav class="navbar justify-content-between p-2">
+      <div class="navbar-brand px-2">
+        <img class="nav-logo" src="../imgs/ST-logo.svg" />
+        <span class="logo-name"> SCHOOTECH </span>
+      </div>
+      <form class="form-inline">
+        <button class="top-nav-btn">
+          <img src="../imgs/school-name-btn-icon.svg" />
+          Jesus Internatioonal School
+        </button>
+
+        <div class="notification">
+          <span type="button">
+            <img
+              class="notification-icon"  
+              src="../imgs/notification.png"
+          /></span>
+          <small class="badge">3</small>
+        </div>
+        <!-- notification modal -->
+        <div id="notification-div" class=" details-shadow">
+          <img class="notify-top-arrow" src="../imgs/notification-top-arrow.svg" />
+          <h5>Notification</h5>
+
+          <div class="notification-collection p-3 m-1">
+            <p>
+            <p class="n-title">Notice</p>
+            <small class="n-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam.
+              <span class="text-secondary float-end">1hr ago</span>
+            </small>
+            </p> 
+            <p class="n-title">Exam</p>
+            <small class="n-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, consequuntur voluptatum laborum numquam blanditiis harum
+              quisquam.
+              <span class="text-secondary float-end">1hr ago</span>
+            </small>
+          </div>
+          <!-- link at bottom -->
+          <p class="text-center my-3 pointer">
+            <span class="float-end me-4" >Clear all</span><br/>
+            View All
+            <img class="view-all-arrow" 
+              src="../imgs/sidebar-arrow-icon.svg"
+            />
+          </p>
+        </div>
+        <!--  -->
+        <img
+          id="top-nav-admin-avatar" 
+          src="../imgs/top-nav-avatar.svg"
+        />
+        <!-- notification modal -->
+        <!-- <div id="u-info-div" class="px-3 pt-3 border"> -->
+          <div id="u-info-div" class="px-3 pt-3 border">
+          <div
+            class="row mx-3 p-2 avatar-info-div-shadw" 
+          >
+            <div class="col-4 ps-0">
+              <img  
+                class="nav-avatar"
+                src="../imgs/top-nav-avatar.svg"
+              />
+            </div>
+            <div class="col-8 py-1">
+              <span class="text-first" >  Cypher T.</span>
+              <hr class="m-0" />
+              <span class="text-first">  See my profile</span>
+            </div>
+          </div>
+          <div class="m-3">
+            <p class="my-2">
+              <img src="../imgs/avatar-info-setting.svg" />
+              Settings
+              <img class="float-end" src="../imgs/sidebar-arrow-icon.svg" />
+            </p>
+            <p class="my-2"> 
+              <img src="../imgs/avatar-info-help.svg" />
+              Help & support
+              <img class="float-end" src="../imgs/sidebar-arrow-icon.svg" />
+            </p>
+            <p class="my-2">
+              <img src="../imgs/avatar-info-feedback.svg" />
+              Give Feedback
+              <img class="float-end" src="../imgs/sidebar-arrow-icon.svg" />
+            </p>
+            <p class="mt-2 mb-0">
+              <img src="../imgs/avatar-info-logout.svg" />
+              Log out
+              <img class="float-end" src="../imgs/sidebar-arrow-icon.svg" />
+            </p>
+          
+          </div>
+        </div>
+        <!--  -->
+      </form>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="nav__cont">
+      <div class="nav">
+        <!-- dashboard -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#dashboard-svg"></use>
+          </svg> 
+            <p class="sidebar-link" > Dashboard </p> 
+        </a>
+
+        <!-- students -->
+        <a class="nav__items" href="../student-module/Student-Listpage.html" >
+          <!-- <div class="nav__items "> -->
+            <svg viewBox="0 0 20 20">
+              <use xlink:href="#students-svg"></use>
+            </svg> 
+              <p class="sidebar-link" > Students </p> 
+          <!-- </div>  -->
+        </a>
+
+        <!-- teachers -->
+        <a class="nav__items active" href="./Teacher-Listpage.html">
+          <svg viewBox="0 0 21 21">
+            <use xlink:href="#teacher-svg"></use>
+          </svg> 
+            <p class="sidebar-link" > Teachers </p> 
+        </a>
+
+        <!-- parents -->
+        <a href="./Parents-Guardian-Listpage.html" class="nav__items">
+          <svg viewBox="0 0 19 19">
+            <use xlink:href="#parent-svg"></use>
+          </svg> 
+            <p class="sidebar-link"> Parents </p> 
+        </a>
+
+        <!-- classroom -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#classroom-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Classroom </p> 
+        </a>
+
+        <!-- attendance -->
+        <div class="nav__items" id="attendance-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#attendance-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Attendance <span class="float-end rotate" >></span> </p> 
+        </div> 
+        <!-- attendance dropdown --> 
+        <div id="attendance-dd" class="sidebar-submenu w-75 mb-2 mt-0">
+          <!-- <p class="sidebar-link"><a class="ps-1" href=""> > Students</a></p> -->
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Students</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Teachers</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staffs</a></p>
+        </div>
+
+        <!-- daily timtable -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#dtt-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Daily Timetable </p> 
+        </a>
+
+        <!-- Financial -->
+        <div class="nav__items"  id="fin-togg-icon">
+          <svg viewBox="0 0 20 20" id="fin-togg-icon">
+            <use xlink:href="#finance-svg"></use>
+          </svg> 
+            <p class="sidebar-link d-flex justify-content-between" href="">
+              Financial <span class="float-end rotate" >></span> 
+            </p> 
+        </div>
+        <!-- finance dropdown -->
+        <div id="fin-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fees</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Expense</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Other Income</a></p>         
+        </div>
+
+        <!-- Exam -->
+        <div class="nav__items" id="exm-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#exam-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Exam  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- exam dropdown -->
+        <div id="exm-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Timetable</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Result</a></p>
+        </div>
+
+        <!-- communication -->
+        <div class="nav__items"  id="cmun-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#communication-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Communication  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- communication dropdown -->
+        <div id="cmun-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Notice</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Events</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> SMS</a></p>
+        </div>
+
+        <!-- Inventory -->
+        <div class="nav__items"  id="inv-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#inventory-svg"></use>
+          </svg> 
+          <p class="sidebar-link " href=""> Inventory  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- Inv dropdown -->
+        <div id="inv-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Master</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> In/Out</a></p>
+        </div>
+
+        <!-- academic -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#academic-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Academic </p>      
+        </a>
+
+        <!-- setting -->
+        <div class="nav__items" id="sett-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#setting-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Setting  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- sett dropdown -->
+        <div id="sett-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
+        </div>
+      </div>
+    </nav>
+    <!-- sidebar ends here -->
+  
+    <!-- student list page start -->
+
+    <div class="module-data-section">
+      <p class="fw-bold">Teachers</p>
+      <h5 class="fw-bold">Registration</h5>
+
+      <div class="studenet-admission-section">
+        <!-- progressbar stepper -->
+        <section class="step-wizard">
+          <ul class="step-wizard-list">
+              <li class="step-wizard-item current-item">
+                  <span class="progress-count">1</span>
+                  <span class="progress-label">Basic</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">2</span>
+                  <span class="progress-label">Address</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">3</span>
+                  <span class="progress-label">Employment</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">4</span>
+                  <span class="progress-label">Additional</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">4</span>
+                  <span class="progress-label">Experience</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">4</span>
+                  <span class="progress-label">Bank</span>
+              </li>
+              <li class="step-wizard-item">
+                  <span class="progress-count">4</span>
+                  <span class="progress-label">Attachments</span>
+              </li>
+          </ul>
+        </section>
+ 
+        <!-- basic details input fields -->
+        <div class="row mx-3">
+          <div class="col-lg-5 col-md-5 col-sm-12">
+            <b>Basic Details</b>
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12 text-end">
+            Employee Id :  <b>157</b>
+          </div></div>
+        <div class="row mx-3 my-4">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Date of Joining<span class="text-danger">*</span></p>
+            <div class="position-relative">
+              <input type="text" id="join-date" class="form-control date-input" placeholder="Enter Joining Date" />
+              <img src="../imgs/input-calender.svg" class="position-absolute date-input-icon" />
+            </div>          
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> First Name<span class="text-danger">*</span>            </p>
+            <input type="text" placeholder="Enter First Name" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Middle Name          </p>
+            <input type="text" placeholder="Enter Middle Name" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Last Name<span class="text-danger">*</span>            </p>
+            <input type="text" placeholder="Enter Last Name" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Mobile Number1<span class="text-danger">*</span> </p>
+            <input type="number" maxlength="10" placeholder="Enter Mobile Number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Mobile Number2</p>
+            <input type="number" maxlength="10" placeholder="Enter Mobile Number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Email  id<span class="text-danger">*</span>        </p>
+            <input type="email" placeholder="Enter Email Id" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Date of birth<span class="text-danger">*</span>            </p>
+            <div class="position-relative">
+            <input type="text" id="dob-date" class="form-control date-input" placeholder="Enter Date of Birth" />
+            <img src="../imgs/input-calender.svg" class="position-absolute date-input-icon"  />
+            </div>
+          </div>
+ 
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0"> Gender<span class="text-danger">*</span>            </p>  
+            <details class="custom-select">
+              <summary class="radios">
+                <input type="radio" name="gender" class="default" title="Select Gender" checked>
+                <input type="radio" name="gender" id="f" title="Female">
+                <input type="radio" name="gender" id="m" title="Male"> 
+                <input type="radio" name="gender" id="o" title="Other"> 
+              </summary>
+              <ul class="list">
+                <li>
+                  <label for="f"> Female </label>
+                </li>
+                <li>
+                  <label for="m">Male</label>
+                </li> 
+                <li>
+                  <label for="o">Other</label>
+                </li> 
+              </ul>
+            </details> 
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+          <p class="m-0">  Blood Group </p> 
+            <details class="custom-select">
+              <summary class="radios">
+                <input type="radio" name="bg" class="default" title="Select Blood Group" checked>
+                <input type="radio" name="bg" id="ap" title="A+"/>
+                <input type="radio" name="bg" id="an" title="A-"/>
+                <input type="radio" name="bg" id="bp" title="B+"/> 
+                <input type="radio" name="bg" id="bn" title="B-"/>  
+                <input type="radio" name="bg" id="bp" title="O+"/> 
+                <input type="radio" name="bg" id="bn" title="O-"/> 
+                <input type="radio" name="bg" id="abp" title="AB+"/> 
+                <input type="radio" name="bg" id="abn" title="AB-"/> 
+              </summary>
+              <ul class="list">
+                <li>
+                  <label for="ap"> A+ </label>
+                </li>
+                <li>
+                  <label for="an"> A- </label>
+                </li>
+                <li>
+                  <label for="bp">B+</label>
+                </li> 
+                <li>
+                  <label for="bn">B-</label>
+                </li> 
+                <li>
+                  <label for="op">O+</label>
+                </li> 
+                <li>
+                  <label for="on">O-</label>
+                </li> 
+                <li>
+                  <label for="abp">AB+</label>
+                </li> 
+                <li>
+                  <label for="abn">AB-</label>
+                </li> 
+              </ul>
+            </details> 
+          </div> 
+        </div>
+
+        <div class="text-center my-3 pb-5">
+          <a  class="btn-blue2 px-4 py-2 " href="./Teacher-Register-Current-Address.html">
+            Next
+            <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_forward </small>
+          </a>
+        </div>
+
+        <!-- button formatt to use -->
+        <!-- <div class="text-center my-3">
+        <button class="btn-blue1 px-4 py-2">Next
+          <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_forward </small></button>
+        </div> -->
+      
+      </div>
+    </div>
+    <!-- student list page end -->
+
+   
+    <footer class="creadit-footer fs-6">
+      Power by <img src="../imgs/ST-logo.svg" /> <span class="fw-bold" >SCHOOTECH</span>
+    </footer>
+    <!-- SCRIPTS -->
+  
+    <script src="../js/air-datepicker.js"></script>
+    <script> 
+
+    // datepicker   
+    new AirDatepicker("#dob-date", {
+          locale: {
+            days: [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+            daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+            months: [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ],
+            monthsShort: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ],
+            //   today: "Today",
+            close: "Close",
+            clear: "Clear",
+            dateFormat: "dd.MM.yyyy",
+            timeFormat: "hh:mm aa",
+            firstDay: 0,
+          },
+        });
+
+    new AirDatepicker("#join-date", {
+          locale: {
+            days: [
+              "Sunday",
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+            ],
+            daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+            daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+            months: [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ],
+            monthsShort: [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec",
+            ],
+            //   today: "Today",
+            // close: "Close",
+            // clear: "Clear",
+            dateFormat: "dd.MM.yyyy",
+            timeFormat: "hh:mm aa",
+            firstDay: 0,
+          },
+        });
+
+
+    //  for dropdown
+    $(document).ready(function () {
+    $(".radios").click(function () {
+      $(this).siblings().show();
+    });
+    $(".radios").change(function () {
+      $("details ul").hide();
+    });
+    });
+
+    </script>
+
+    <!-- sidebar script and svg -->
+ 
+    <!-- SCRIPTS -->
+    <script>
+      // attendance dropdown
+      $("#attendance-togg-icon").click(function () {
+        $("#attendance-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+        $("#attendance-togg-icon .float-end").toggleClass("down"); 
+        $("#exm-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#fin-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#cmun-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#inv-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#sett-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+
+        $("#exm-dd").hide();
+        $("#cmun-dd").hide();
+        $("#fin-dd").hide();
+        $("#inv-dd").hide();
+        $("#sett-dd").hide();
+
+      });
+       // exm dropdown
+      $("#exm-togg-icon").click(function () {
+        $("#exm-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+        $("#exm-togg-icon .float-end").toggleClass("down");
+        $("#attendance-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#fin-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#cmun-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#inv-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#sett-togg-icon .float-end").addClass("rotate").removeClass('down');  
+
+          $("#attendance-dd").hide(); 
+          $("#cmun-dd").hide();
+          $("#fin-dd").hide();
+          $("#inv-dd").hide();
+          $("#sett-dd").hide();
+
+      });
+      // cmun dropdown
+      $("#cmun-togg-icon").click(function () {
+        $("#cmun-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+        $("#cmun-togg-icon .rotate").toggleClass("down");  
+        $("#attendance-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#fin-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#exm-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#inv-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#sett-togg-icon .float-end").addClass("rotate").removeClass('down');
+ 
+
+        $("#attendance-dd").hide();
+        $("#exm-dd").hide(); 
+        $("#fin-dd").hide();
+        $("#inv-dd").hide();
+        $("#sett-dd").hide();
+
+      });
+      // finance dropdown
+      $("#fin-togg-icon").click(function () {
+        $("#fin-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+        $("#fin-togg-icon .rotate").toggleClass("down");
+        $("#attendance-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#cmun-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#exm-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#inv-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#sett-togg-icon .float-end").addClass("rotate").removeClass('down');
+  
+        $("#attendance-dd").hide();
+        $("#exm-dd").hide();
+        $("#cmun-dd").hide(); 
+        $("#inv-dd").hide();
+        $("#sett-dd").hide();
+
+      });
+      // inv dropdown
+      $("#inv-togg-icon").click(function () {
+        $("#inv-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+        $("#inv-togg-icon .rotate").toggleClass("down");
+        $("#attendance-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#cmun-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#exm-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#fin-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#sett-togg-icon .float-end").addClass("rotate").removeClass('down');
+ 
+
+        $("#attendance-dd").hide();
+        $("#exm-dd").hide();
+        $("#cmun-dd").hide();
+        $("#fin-dd").hide(); 
+        $("#sett-dd").hide();
+
+      });
+      // sett dropdown
+      $("#sett-togg-icon").click(function () {
+        $("#sett-dd").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        }) 
+        // $('.nav__cont').scrollTop($('.nav__cont').height()); 
+        $("#sett-togg-icon .rotate").toggleClass("down");
+        $("#attendance-togg-icon .float-end").addClass("rotate").removeClass('down'); 
+        $("#cmun-togg-icon .float-end").addClass("rotate").removeClass('down');    
+        $("#exm-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#fin-togg-icon .float-end").addClass("rotate").removeClass('down');  
+        $("#inv-togg-icon .float-end").addClass("rotate").removeClass('down');
+  
+        $("#attendance-dd").hide();
+        $("#exm-dd").hide();
+        $("#cmun-dd").hide();
+        $("#fin-dd").hide();
+        $("#inv-dd").hide(); 
+
+      });
+      // notification  div
+      $(".notification").click(function () {
+        $("#notification-div").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });$("#u-info-div").hide();
+      });
+      // notification  div
+      $("#top-nav-admin-avatar").click(function () {
+        $("#u-info-div").toggle(function () {
+          $("#panel").animate(
+            {
+              height: "150",
+              padding: "20px 0",
+              backgroundColor: "#000000",
+              opacity: 0.8,
+            },
+            500
+          );
+        });
+
+        $("#notification-div").hide();
+      });
+    </script> 
+    <!-- SCRIPTS ENDS -->
+    <!-- SVG Collections -->
+    <svg style="display: none">
+      <defs>
+        <!-- dashboard -->
+        <g id="dashboard-svg">
+          <path
+            d="M6.67962 3.33325H5.0986C4.22542 3.33325 3.51758 4.07944 3.51758 4.99992V5.83325C3.51758 6.75373 4.22542 7.49992 5.0986 7.49992H6.67962C7.55279 7.49992 8.26063 6.75373 8.26063 5.83325V4.99992C8.26063 4.07944 7.55279 3.33325 6.67962 3.33325Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67962 10.8333H5.0986C4.22542 10.8333 3.51758 11.5794 3.51758 12.4999V14.9999C3.51758 15.9204 4.22542 16.6666 5.0986 16.6666H6.67962C7.55279 16.6666 8.26063 15.9204 8.26063 14.9999V12.4999C8.26063 11.5794 7.55279 10.8333 6.67962 10.8333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5844 3.33325H13.0034C12.1302 3.33325 11.4224 4.07944 11.4224 4.99992V14.9999C11.4224 15.9204 12.1302 16.6666 13.0034 16.6666H14.5844C15.4576 16.6666 16.1654 15.9204 16.1654 14.9999V4.99992C16.1654 4.07944 15.4576 3.33325 14.5844 3.33325Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- students -->
+        <g id="students-svg">
+          <path
+            d="M5.88912 5.83333C6.7623 5.83333 7.47014 5.08714 7.47014 4.16667C7.47014 3.24619 6.7623 2.5 5.88912 2.5C5.01595 2.5 4.30811 3.24619 4.30811 4.16667C4.30811 5.08714 5.01595 5.83333 5.88912 5.83333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.30809 18.3334V14.1667L3.51758 13.3334V10.0001C3.51758 9.77907 3.60086 9.56711 3.74911 9.41083C3.89736 9.25455 4.09843 9.16675 4.30809 9.16675H7.47012C7.67978 9.16675 7.88085 9.25455 8.0291 9.41083C8.17735 9.56711 8.26063 9.77907 8.26063 10.0001V13.3334L7.47012 14.1667V18.3334"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13.7939 5.83333C14.6671 5.83333 15.3749 5.08714 15.3749 4.16667C15.3749 3.24619 14.6671 2.5 13.7939 2.5C12.9207 2.5 12.2129 3.24619 12.2129 4.16667C12.2129 5.08714 12.9207 5.83333 13.7939 5.83333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.2133 18.3334V15.0001H10.6323L12.2133 10.0001C12.2133 9.77907 12.2966 9.56711 12.4449 9.41083C12.5931 9.25455 12.7942 9.16675 13.0039 9.16675H14.5849C14.7945 9.16675 14.9956 9.25455 15.1438 9.41083C15.2921 9.56711 15.3754 9.77907 15.3754 10.0001L16.9564 15.0001H15.3754V18.3334"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- Teachers -->
+        <g id="teacher-svg">
+          <path
+            d="M7.47014 9.16667C9.21649 9.16667 10.6322 7.67428 10.6322 5.83333C10.6322 3.99238 9.21649 2.5 7.47014 2.5C5.7238 2.5 4.30811 3.99238 4.30811 5.83333C4.30811 7.67428 5.7238 9.16667 7.47014 9.16667Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.72705 17.5V15.8333C2.72705 14.9493 3.06019 14.1014 3.65319 13.4763C4.24619 12.8512 5.05046 12.5 5.88909 12.5H9.05112C9.88975 12.5 10.694 12.8512 11.287 13.4763C11.88 14.1014 12.2132 14.9493 12.2132 15.8333V17.5"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13.0034 2.6084C13.6836 2.79198 14.2864 3.20898 14.717 3.79366C15.1475 4.37833 15.3811 5.09742 15.3811 5.83757C15.3811 6.57771 15.1475 7.2968 14.717 7.88147C14.2864 8.46615 13.6836 8.88315 13.0034 9.06673"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.956 17.5V15.8333C16.952 15.0976 16.7172 14.384 16.2882 13.8037C15.8593 13.2233 15.2602 12.8089 14.5845 12.625"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- parents -->
+        <g id="parent-svg">
+          <path
+            d="M5.88912 9.16659C6.7623 9.16659 7.47014 8.42039 7.47014 7.49992C7.47014 6.57944 6.7623 5.83325 5.88912 5.83325C5.01595 5.83325 4.30811 6.57944 4.30811 7.49992C4.30811 8.42039 5.01595 9.16659 5.88912 9.16659Z"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13.7939 9.16659C14.6671 9.16659 15.3749 8.42039 15.3749 7.49992C15.3749 6.57944 14.6671 5.83325 13.7939 5.83325C12.9207 5.83325 12.2129 6.57944 12.2129 7.49992C12.2129 8.42039 12.9207 9.16659 13.7939 9.16659Z"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.84174 11.6667C11.1515 11.6667 12.2133 10.5475 12.2133 9.16675C12.2133 7.78604 11.1515 6.66675 9.84174 6.66675C8.53198 6.66675 7.47021 7.78604 7.47021 9.16675C7.47021 10.5475 8.53198 11.6667 9.84174 11.6667Z"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67969 17.5002V16.1113C6.67969 15.3746 6.92954 14.668 7.37429 14.1471C7.81904 13.6262 8.42225 13.3335 9.05122 13.3335H11.4227C12.0517 13.3335 12.6549 13.6262 13.0997 14.1471C13.5444 14.668 13.7943 15.3746 13.7943 16.1113V17.5002"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.51758 13.3333V12.4999C3.51758 12.0579 3.68415 11.634 3.98065 11.3214C4.27715 11.0088 4.67928 10.8333 5.0986 10.8333H6.67962C7.09893 10.8333 7.50107 11.0088 7.79756 11.3214C8.09406 11.634 8.26063 12.0579 8.26063 12.4999V13.3333"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.4224 13.3333V12.4999C11.4224 12.0579 11.5889 11.634 11.8854 11.3214C12.1819 11.0088 12.5841 10.8333 13.0034 10.8333H14.5844C15.0037 10.8333 15.4059 11.0088 15.7023 11.3214C15.9988 11.634 16.1654 12.0579 16.1654 12.4999V13.3333"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- classroom -->
+        <g id="classroom-svg">
+          <rect
+            x="2.08359"
+            y="2.6002"
+            width="14.7876"
+            height="1.096"
+            rx="0.548"
+            stroke-width="0.8"
+          />
+          <rect
+            x="2.6832"
+            y="13.9762"
+            width="3.99618"
+            height="1.096"
+            rx="0.548"
+            stroke-width="0.8"
+          />
+          <rect
+            x="8.07871"
+            y="13.9762"
+            width="3.99618"
+            height="1.096"
+            rx="0.548"
+            stroke-width="0.8"
+          />
+          <rect
+            x="13.4747"
+            y="13.9762"
+            width="3.99618"
+            height="1.096"
+            rx="0.548"
+            stroke-width="0.8"
+          />
+          <rect
+            x="2.08359"
+            y="11.4483"
+            width="14.7876"
+            height="1.096"
+            rx="0.548"
+            stroke-width="0.8"
+          />
+          <line
+            x1="3.28281"
+            y1="4.09619"
+            x2="3.28281"
+            y2="11.0482"
+            stroke-width="0.8"
+          />
+          <path
+            d="M3.08193 18.0003C3.08193 18.2212 3.26102 18.4003 3.48193 18.4003C3.70285 18.4003 3.88193 18.2212 3.88193 18.0003L3.08193 18.0003ZM3.08193 14.8403L3.08193 18.0003L3.88193 18.0003L3.88193 14.8403L3.08193 14.8403Z"
+          />
+          <path
+            d="M8.47793 18.0003C8.47793 18.2212 8.65702 18.4003 8.87793 18.4003C9.09884 18.4003 9.27793 18.2212 9.27793 18.0003L8.47793 18.0003ZM8.47793 14.8403L8.47793 18.0003L9.27793 18.0003L9.27793 14.8403L8.47793 14.8403Z"
+          />
+          <path
+            d="M13.8734 18.0003C13.8734 18.2212 14.0525 18.4003 14.2734 18.4003C14.4944 18.4003 14.6734 18.2212 14.6734 18.0003L13.8734 18.0003ZM13.8734 14.8403L13.8734 18.0003L14.6734 18.0003L14.6734 14.8403L13.8734 14.8403Z"
+          />
+          <path
+            d="M5.48037 18.0003C5.48037 18.2212 5.65946 18.4003 5.88037 18.4003C6.10128 18.4003 6.28037 18.2212 6.28037 18.0003L5.48037 18.0003ZM5.48037 14.8403L5.48037 18.0003L6.28037 18.0003L6.28037 14.8403L5.48037 14.8403Z"
+          />
+          <path
+            d="M10.8759 18.0003C10.8759 18.2212 11.055 18.4003 11.2759 18.4003C11.4968 18.4003 11.6759 18.2212 11.6759 18.0003L10.8759 18.0003ZM10.8759 14.8403L10.8759 18.0003L11.6759 18.0003L11.6759 14.8403L10.8759 14.8403Z"
+          />
+          <path
+            d="M16.2719 18.0003C16.2719 18.2212 16.451 18.4003 16.6719 18.4003C16.8928 18.4003 17.0719 18.2212 17.0719 18.0003L16.2719 18.0003ZM16.2719 14.8403L16.2719 18.0003L17.0719 18.0003L17.0719 14.8403L16.2719 14.8403Z"
+          />
+          <line
+            x1="15.8727"
+            y1="4.09619"
+            x2="15.8727"
+            y2="11.0482"
+            stroke-width="0.8"
+          />
+          <path
+            d="M10.0771 5.36035L14.8733 5.36035"
+            stroke-width="0.8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M8.27832 6.62402H14.8731"
+            stroke-width="0.8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M8.27832 7.88818H14.8731"
+            stroke-width="0.8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M8.27832 9.15234H14.8731"
+            stroke-width="0.8"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4.33436 9.78815L4.3767 5.99782L6.76424 9.78815L4.33436 9.78815Z"
+            stroke-width="0.8"
+          />
+        </g>
+
+        <!-- Subject -->
+        <g id="subject-svg">
+          <path
+            d="M2.30661 14.0639C3.70021 14.1984 5.14258 14.5736 6.57884 15.1895V16.7732L0.688965 15.6688V2.53613L2.30661 2.83918V14.0639ZM9.83802 17.0512V17.3842L8.65426 17.1622V16.253C9.05127 16.4904 9.4452 16.7469 9.83569 17.022V17.0544C9.83647 17.0532 9.83724 17.0524 9.83802 17.0512Z"
+            stroke-width="0.9"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.8823 4.59814V17.0549L9.86014 17.0508L9.84739 17.0485L9.84076 17.0473L9.83798 17.0467L9.83576 17.0461V4.65658C9.83632 4.65541 9.83743 4.65424 9.83798 4.65307V4.58994L9.84132 4.59053L9.84743 4.5917L9.86018 4.59404L9.87515 4.59697L9.8823 4.59814ZM3.45924 12.7561C4.37243 12.7354 5.47315 13.064 6.57887 13.7419V15.1899C5.14262 14.574 3.70021 14.1988 2.30664 14.0644V1.60791C2.68753 1.64436 3.07224 1.69947 3.45924 1.7724V12.7561ZM9.83569 16.9806V17.0224C9.4452 16.7472 9.05127 16.4908 8.65426 16.2534V15.4646C9.06972 15.9138 9.46751 16.4195 9.83569 16.9806Z"
+            stroke-width="0.9"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.8825 4.59807V17.0548C9.87916 17.0525 9.87639 17.0502 9.87309 17.0484C9.86868 17.0449 9.86479 17.0419 9.86034 17.039C9.85701 17.0367 9.85371 17.0344 9.85034 17.0326C9.84644 17.029 9.84204 17.0261 9.83814 17.0238C9.83759 17.0232 9.83648 17.0226 9.83592 17.0221V4.6565C9.83648 4.65533 9.83759 4.65416 9.83814 4.65299V4.58576C9.83092 4.57404 9.82373 4.5624 9.81543 4.55127C9.82321 4.55592 9.83036 4.56119 9.83814 4.56701C9.84533 4.57166 9.85308 4.57693 9.8603 4.58221C9.86471 4.58514 9.8686 4.58803 9.87305 4.59158C9.87416 4.59217 9.87583 4.59334 9.87694 4.59393C9.87865 4.59576 9.88087 4.59693 9.8825 4.59807Z"
+            stroke-width="1.1"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.83822 4.58549V4.65275C9.83744 4.65396 9.8367 4.65517 9.83592 4.65638V16.9803C9.46774 16.4192 9.06995 15.9136 8.65449 15.4642C7.99228 14.7479 7.28471 14.1734 6.57911 13.7415C5.47338 13.0637 4.37266 12.7351 3.45947 12.7558V0.357322C5.23623 0.318025 7.72363 1.59994 9.57727 4.20263C9.65798 4.31607 9.73791 4.43236 9.81557 4.55107C9.82358 4.5624 9.83092 4.57377 9.83822 4.58549Z"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.88474 4.65668V17.055C9.88418 17.0538 9.88307 17.0526 9.88252 17.0514C9.8814 17.0503 9.88085 17.0485 9.87974 17.0473C9.8764 17.0427 9.87362 17.0374 9.87032 17.0327C9.86699 17.0275 9.86369 17.0228 9.86032 17.0181C9.85309 17.0064 9.84591 16.9954 9.83816 16.9842C9.83816 16.983 9.83705 16.9819 9.83594 16.9807V4.65668C9.83649 4.65551 9.8376 4.65434 9.83816 4.65316V4.58594C9.83983 4.5877 9.84094 4.58887 9.8415 4.59059C9.84261 4.59176 9.84316 4.59293 9.84372 4.5941C9.84483 4.59527 9.84539 4.59586 9.84539 4.59703C9.85091 4.60465 9.85591 4.61223 9.86032 4.61984C9.8681 4.63094 9.87525 4.64203 9.88248 4.65316C9.88303 4.65434 9.88415 4.65551 9.88474 4.65668Z"
+            stroke-width="1.1"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M19.0313 2.53613V15.6691L9.88232 17.3843V17.0512C9.88288 17.0523 9.88399 17.0535 9.88455 17.0547V17.022C12.3449 15.288 14.9555 14.3015 17.4136 14.0643V2.83941L19.0313 2.53613Z"
+            stroke-width="0.9"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.88443 4.65648V17.046L9.88221 17.0466L9.87943 17.0472L9.8728 17.0484L9.86005 17.0507L9.83789 17.0548V4.59805L9.84508 4.59688L9.86001 4.59395L9.87276 4.5916L9.87887 4.59043L9.88221 4.58984V4.65297C9.88273 4.65414 9.88384 4.65531 9.88443 4.65648Z"
+            stroke-width="1.1"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.4138 1.60742V14.0642C14.9557 14.3014 12.3451 15.2879 9.88477 17.0219V16.9804C11.7597 14.122 14.4002 12.7142 16.2612 12.7557V1.77223C16.6482 1.69918 17.033 1.64422 17.4138 1.60742Z"
+            stroke-width="0.9"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.88225 4.65295C9.8828 4.65412 9.88391 4.65529 9.88447 4.65646V17.022C9.88391 17.0226 9.8828 17.0232 9.88225 17.0238C9.87835 17.0261 9.87395 17.029 9.87005 17.0325C9.86672 17.0343 9.86342 17.0366 9.86005 17.039C9.85564 17.0419 9.85175 17.0448 9.8473 17.0483C9.84397 17.0501 9.84119 17.0524 9.83789 17.0548V4.59803C9.83956 4.59686 9.84178 4.59568 9.84341 4.59393C9.84452 4.59334 9.84619 4.59217 9.8473 4.59158C9.85171 4.58807 9.8556 4.58514 9.86005 4.58221C9.86728 4.57693 9.87498 4.57166 9.88221 4.56701C9.88999 4.56119 9.89718 4.55592 9.90492 4.55127C9.89662 4.56236 9.8894 4.57404 9.88221 4.58576V4.65295H9.88225Z"
+            stroke-width="1.1"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.2612 0.357315V12.7556C14.4002 12.7141 11.7597 14.1219 9.88475 16.9803V4.65626C9.8842 4.65509 9.88308 4.65392 9.88253 4.65275V4.58552C9.88975 4.5738 9.89694 4.56216 9.90524 4.55103C9.98343 4.43239 10.0627 4.31607 10.1442 4.20271C11.9975 1.59982 14.4845 0.318175 16.2612 0.357315ZM8.65448 15.4642V19.6823L7.61679 18.5884L6.5791 19.6823V13.7415C7.28474 14.1734 7.99227 14.7479 8.65448 15.4642Z"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- Attendance -->
+        <g id="attendance-svg">
+          <path
+            d="M14.5847 4.1665H5.0986C4.22542 4.1665 3.51758 4.9127 3.51758 5.83317V15.8332C3.51758 16.7536 4.22542 17.4998 5.0986 17.4998H14.5847C15.4579 17.4998 16.1657 16.7536 16.1657 15.8332V5.83317C16.1657 4.9127 15.4579 4.1665 14.5847 4.1665Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M13.0034 2.5V5.83333"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67969 2.5V5.83333"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M3.51758 9.1665H16.1657"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.26071 12.5H6.67969V14.1667H8.26071V12.5Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- daily timetable -->
+        <g id="dtt-svg">
+          <path
+            d="M9.67958 17.4998H4.30807C3.88876 17.4998 3.48662 17.3242 3.19012 17.0117C2.89362 16.6991 2.72705 16.2752 2.72705 15.8332V5.83317C2.72705 5.39114 2.89362 4.96722 3.19012 4.65466C3.48662 4.3421 3.88876 4.1665 4.30807 4.1665H13.7942C14.2135 4.1665 14.6156 4.3421 14.9121 4.65466C15.2086 4.96722 15.3752 5.39114 15.3752 5.83317V9.1665"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5844 18.3332C16.3307 18.3332 17.7464 16.8408 17.7464 14.9998C17.7464 13.1589 16.3307 11.6665 14.5844 11.6665C12.8381 11.6665 11.4224 13.1589 11.4224 14.9998C11.4224 16.8408 12.8381 18.3332 14.5844 18.3332Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M12.2129 2.5V5.83333"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M5.88916 2.5V5.83333"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.72705 9.1665H15.3752"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5845 13.7466V14.9999L15.375 15.8332"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- finance -->
+        <g id="finance-svg">
+          <path
+            d="M13.7942 7.49999V5.83332C13.7942 5.3913 13.6276 4.96737 13.3311 4.65481C13.0346 4.34225 12.6325 4.16666 12.2132 4.16666H4.30807C3.88876 4.16666 3.48662 4.34225 3.19012 4.65481C2.89362 4.96737 2.72705 5.3913 2.72705 5.83332V10.8333C2.72705 11.2754 2.89362 11.6993 3.19012 12.0118C3.48662 12.3244 3.88876 12.5 4.30807 12.5H5.88909"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.3753 7.5H7.47018C6.59701 7.5 5.88916 8.24619 5.88916 9.16667V14.1667C5.88916 15.0871 6.59701 15.8333 7.47018 15.8333H15.3753C16.2484 15.8333 16.9563 15.0871 16.9563 14.1667V9.16667C16.9563 8.24619 16.2484 7.5 15.3753 7.5Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.4228 13.3333C12.296 13.3333 13.0038 12.5871 13.0038 11.6667C13.0038 10.7462 12.296 10 11.4228 10C10.5496 10 9.8418 10.7462 9.8418 11.6667C9.8418 12.5871 10.5496 13.3333 11.4228 13.3333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- exam -->
+        <g id="exam-svg">
+          <path
+            d="M6.67962 4.16666H5.0986C4.67928 4.16666 4.27715 4.34225 3.98065 4.65481C3.68415 4.96737 3.51758 5.3913 3.51758 5.83332V15.8333C3.51758 16.2754 3.68415 16.6993 3.98065 17.0118C4.27715 17.3244 4.67928 17.5 5.0986 17.5H9.60213"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5844 9.16666V5.83332C14.5844 5.3913 14.4178 4.96737 14.1213 4.65481C13.8248 4.34225 13.4227 4.16666 13.0034 4.16666H11.4224"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.84172 2.5H8.26071C7.38753 2.5 6.67969 3.24619 6.67969 4.16667C6.67969 5.08714 7.38753 5.83333 8.26071 5.83333H9.84172C10.7149 5.83333 11.4227 5.08714 11.4227 4.16667C11.4227 3.24619 10.7149 2.5 9.84172 2.5Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5844 18.3333C16.3307 18.3333 17.7464 16.8409 17.7464 15C17.7464 13.159 16.3307 11.6667 14.5844 11.6667C12.8381 11.6667 11.4224 13.159 11.4224 15C11.4224 16.8409 12.8381 18.3333 14.5844 18.3333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67969 9.16666H9.84172"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67969 12.5H9.05122"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.5845 11.6667V15H17.7465"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- communication -->
+        <g id="communication-svg">
+          <path
+            d="M13.0034 6.6665C13.6324 6.6665 14.2356 6.9299 14.6803 7.39874C15.1251 7.86758 15.3749 8.50346 15.3749 9.1665C15.3749 9.82955 15.1251 10.4654 14.6803 10.9343C14.2356 11.4031 13.6324 11.6665 13.0034 11.6665"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6.67963 6.6665V15.8332C6.67963 16.0542 6.59635 16.2661 6.4481 16.4224C6.29985 16.5787 6.09878 16.6665 5.88912 16.6665H5.09861C4.88896 16.6665 4.68789 16.5787 4.53964 16.4224C4.39139 16.2661 4.30811 16.0542 4.30811 15.8332V11.6665"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M8.26058 6.66646L11.8368 3.52479C11.9408 3.43355 12.0672 3.37542 12.2013 3.35721C12.3355 3.33901 12.4717 3.36148 12.5942 3.422C12.7166 3.48252 12.8202 3.57858 12.8927 3.69892C12.9652 3.81926 13.0037 3.95889 13.0036 4.10146V14.2315C13.0037 14.374 12.9652 14.5137 12.8927 14.634C12.8202 14.7543 12.7166 14.8504 12.5942 14.9109C12.4717 14.9714 12.3355 14.9939 12.2013 14.9757C12.0672 14.9575 11.9408 14.8994 11.8368 14.8081L8.26058 11.6665H1.93651C1.72685 11.6665 1.52578 11.5787 1.37753 11.4224C1.22928 11.2661 1.146 11.0541 1.146 10.8331V7.49979C1.146 7.27878 1.22928 7.06682 1.37753 6.91054C1.52578 6.75426 1.72685 6.66646 1.93651 6.66646H8.26058Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M16.9561 5.8335C17.4469 6.22161 17.8454 6.72488 18.1198 7.30344C18.3942 7.882 18.5371 8.51997 18.5371 9.16683C18.5371 9.81368 18.3942 10.4517 18.1198 11.0302C17.8454 11.6088 17.4469 12.112 16.9561 12.5002"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- inventory -->
+        <g id="inventory-svg">
+          <path
+            d="M2.72705 17.5H16.9562"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2.72705 5.83333V6.66667C2.72705 7.32971 2.97691 7.96559 3.42166 8.43443C3.8664 8.90328 4.46961 9.16667 5.09858 9.16667C5.72755 9.16667 6.33075 8.90328 6.7755 8.43443C7.22025 7.96559 7.47011 7.32971 7.47011 6.66667M2.72705 5.83333H16.9562M2.72705 5.83333L4.30807 2.5H15.3752L16.9562 5.83333M7.47011 6.66667V5.83333M7.47011 6.66667C7.47011 7.32971 7.71996 7.96559 8.16471 8.43443C8.60946 8.90328 9.21267 9.16667 9.84163 9.16667C10.4706 9.16667 11.0738 8.90328 11.5186 8.43443C11.9633 7.96559 12.2132 7.32971 12.2132 6.66667M12.2132 6.66667V5.83333M12.2132 6.66667C12.2132 7.32971 12.463 7.96559 12.9078 8.43443C13.3525 8.90328 13.9557 9.16667 14.5847 9.16667C15.2137 9.16667 15.8169 8.90328 16.2616 8.43443C16.7064 7.96559 16.9562 7.32971 16.9562 6.66667V5.83333"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.30811 17.4998V9.0415"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.375 17.4998V9.0415"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.47021 17.5V14.1667C7.47021 13.7246 7.63679 13.3007 7.93328 12.9882C8.22978 12.6756 8.63192 12.5 9.05123 12.5H10.6323C11.0516 12.5 11.4537 12.6756 11.7502 12.9882C12.0467 13.3007 12.2133 13.7246 12.2133 14.1667V17.5"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- academics -->
+        <g id="academic-svg">
+          <path
+            d="M2.72705 17.5H16.9562"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M4.30811 17.5V5.83333L10.6322 2.5V17.5"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.3754 17.5002V9.16683L10.6323 5.8335"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.47021 7.5V7.50833"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.47021 10V10.0083"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.47021 12.5V12.5083"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M7.47021 15V15.0083"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- setting -->
+        <g id="setting-svg">
+          <path
+            d="M8.51753 3.5975C8.85429 2.13417 10.829 2.13417 11.1657 3.5975C11.2163 3.81733 11.3153 4.02148 11.4548 4.19333C11.5944 4.36518 11.7704 4.49988 11.9686 4.58645C12.1668 4.67303 12.3817 4.70904 12.5956 4.69156C12.8095 4.67407 13.0165 4.60359 13.1997 4.48583C14.4195 3.7025 15.8163 5.17417 15.0732 6.46083C14.9617 6.65388 14.8949 6.87195 14.8784 7.09731C14.8618 7.32267 14.896 7.54897 14.978 7.75782C15.06 7.96666 15.1876 8.15215 15.3505 8.29921C15.5133 8.44627 15.7068 8.55075 15.9151 8.60417C17.3032 8.95917 17.3032 11.0408 15.9151 11.3958C15.7066 11.4491 15.5129 11.5535 15.3499 11.7006C15.1869 11.8477 15.0591 12.0332 14.977 12.2422C14.8949 12.4512 14.8607 12.6776 14.8773 12.9032C14.8939 13.1287 14.9607 13.3469 15.0724 13.54C15.8155 14.8258 14.4195 16.2983 13.1989 15.515C13.0158 15.3974 12.8089 15.327 12.5952 15.3096C12.3814 15.2922 12.1667 15.3281 11.9686 15.4146C11.7705 15.5011 11.5945 15.6356 11.455 15.8073C11.3155 15.9789 11.2164 16.1829 11.1657 16.4025C10.829 17.8658 8.85429 17.8658 8.51753 16.4025C8.467 16.1827 8.36795 15.9785 8.22843 15.8067C8.08892 15.6348 7.91288 15.5001 7.71465 15.4135C7.51642 15.327 7.3016 15.291 7.08767 15.3084C6.87374 15.3259 6.66675 15.3964 6.48355 15.5142C5.26379 16.2975 3.86696 14.8258 4.61004 13.5392C4.72159 13.3461 4.78834 13.1281 4.80489 12.9027C4.82144 12.6773 4.78731 12.451 4.70528 12.2422C4.62325 12.0333 4.49563 11.8479 4.33279 11.7008C4.16996 11.5537 3.9765 11.4492 3.76815 11.3958C2.38002 11.0408 2.38002 8.95917 3.76815 8.60417C3.97669 8.5509 4.17035 8.44648 4.33337 8.29941C4.49638 8.15233 4.62416 7.96676 4.70628 7.75779C4.78841 7.54882 4.82257 7.32236 4.80599 7.09685C4.7894 6.87133 4.72253 6.65313 4.61083 6.46C3.86776 5.17417 5.26379 3.70167 6.48434 4.485C7.27485 4.99167 8.29935 4.54333 8.51753 3.5975Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M9.84174 12.5C11.1515 12.5 12.2133 11.3807 12.2133 10C12.2133 8.61929 11.1515 7.5 9.84174 7.5C8.53198 7.5 7.47021 8.61929 7.47021 10C7.47021 11.3807 8.53198 12.5 9.84174 12.5Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+        <!-- sidebar arrow icon -->
+        <g id="sidebar-toggle-icon">
+          <path
+            d="M7.45361 4.38776L12.1967 8.77551L7.45361 13.1633"
+            stroke="red"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </defs>
+    </svg>
+  </body>
+</html>
