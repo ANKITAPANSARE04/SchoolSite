@@ -29,7 +29,7 @@
   <body>
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -329,26 +329,36 @@
             <b>Additional Details</b>
           </div> 
         </div>
-        <div class="row mx-3 my-4">  
+        <div class="row mx-3 my-2">  
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Father Name<span class="text-danger">*</span>            </p>  
+            <p class="m-0">Father Name </p>  
             <input type="text" placeholder="Enter Father Name" />
           </div>
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Mother Name<span class="text-danger">*</span>            </p>  
-            <input type="text" placeholder="Enter Mother Name" />
-          </div> 
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Emergency Contact Name<span class="text-danger">*</span>            </p>
-            <input type="text" placeholder="Enter Name" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Emergency Contact Number<span class="text-danger">*</span>            </p>
+            <p class="m-0">Father Mobile Number </p>   
             <input type="number" maxlength="10" placeholder="Enter Mobile Number"
           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
           </div>
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Marital Status<span class="text-danger">*</span>            </p>  
+            <p class="m-0">Mother Name </p>  
+            <input type="text" placeholder="Enter Mother Name" />
+          </div> 
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Mother Mobile Number</p>   
+            <input type="number" maxlength="10" placeholder="Enter Mobile Number"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Emergency Contact Name<span class="text-danger">*</span> </p>
+            <input type="text" placeholder="Enter Name" />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Emergency Contact Number<span class="text-danger">*</span> </p>
+            <input type="number" maxlength="10" placeholder="Enter Mobile Number"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Marital Status<span class="text-danger">*</span> </p>  
             <details class="custom-select">
               <summary class="radios">
                 <input type="radio" name="mstat" class="default" title="Select Marital Status" checked>
@@ -374,7 +384,7 @@
             <input type="text" placeholder="Enter Spouse Name" />
           </div>
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Religion<span class="text-danger">*</span>            </p>  
+            <p class="m-0">Religion<span class="text-danger">*</span> </p>  
               <details class="custom-select">
                 <summary class="radios">
                   <input type="radio" name="relig" class="default" title="Select Religion" checked>
@@ -400,7 +410,7 @@
               </details> 
           </div>
           <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Cast<span class="text-danger">*</span>            </p>     
+            <p class="m-0">Cast<span class="text-danger">*</span> </p>     
               <details class="custom-select">
                 <summary class="radios">
                   <input type="radio" name="cast" class="default" title="Select Cast" checked>
@@ -671,7 +681,7 @@
     </script> 
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
-    <svg style="display: none">
+    <svg class="d-none">
       <defs>
         <!-- dashboard -->
         <g id="dashboard-svg">

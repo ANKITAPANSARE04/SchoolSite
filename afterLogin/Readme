@@ -1,0 +1,51 @@
+**Links included in project:**
+bootstrap 5 css and js cdn
+for datepicker and pie chart there are js and css included folder in respective.
+google font cdn for google icon use
+For font CDN used in style.css
+
+**pages not linked to web pages folw**
+-DNT-Datepicker.html in student-module is page for clender dropdown (used link, css and code) UI program.
+-Fee-Recipt is linked in student pdf img- on click download, we can open in browser with double click
+-Teacher-Details-Time-table-test.html has seperate time table css included in page.(backup of teacher-detail page)
+
+## _html_
+
+-every module has sidebar.html containing layout for respected module. Everything is same excepet sidebar active section.
+-all .html has code of sidebar with SVG-Script required for sidebar.
+-each page has 'script' included into it. which use id-class of page, and it wasn't working with 'main.js' thats why kept in same file.
+
+## _css_
+
+-there are 2 css,
+Style.css in general style,
+air-datepicker.css is required for calender input visulas.
+
+## _js_
+
+-there are 2 js,
+Style.js in general style,
+air-datepicker.js is required for calender input visulas.
+
+->>Component may need to explin, :
+-student fees table
+-pie attaindance chart
+-datepicker input
+-calendar from event in details page of all(student, teacher, staff) module
+
+//-contact sagar🤪-//
+
+<!--
+ -after login and before login has their own css and js don't mix them up.
+
+-there is no js in login-forgot pwd flow
+
+-Login page linked to student list page
+
+-student, teacher and parents pages are linked with eachother
+
+-Staff pages are not linked with other module but they are interlinked
+
+-on details page calender svg img is used, use calender folder for backend
+
+-->

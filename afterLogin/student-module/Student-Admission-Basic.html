@@ -28,7 +28,7 @@
    
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -328,11 +328,11 @@
           <div class="col-lg-7 col-md-7 col-sm-12 text-end">
             Admission Number :  <b>157</b>
           </div></div>
-        <div class="row mx-3 my-4">
+        <div class="row mx-3 ">
           <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
             <p class="m-0"> Date of Admission<span class="text-danger">*</span>            </p>
             <div class="position-relative">
-            <input type="text" id="admission-date" class="form-control date-input" placeholder="dd/mm/yy" />
+            <input type="text" id="admission-date" class="form-control date-input" placeholder="Select Date of Admission" />
             <img src="../imgs/input-calender.svg" class="position-absolute date-input-icon"  />
             </div>
           </div>
@@ -425,7 +425,7 @@
           <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
           <p class="m-0">  Date of Birth<span class="text-danger">*</span></p>
           <div class="position-relative">
-            <input type="text" id="birth-date" class="form-control date-input" placeholder="dd/mm/yy" />
+            <input type="text" id="birth-date" class="form-control date-input" placeholder="Select Birth Date" />
             <img src="../imgs/input-calender.svg" class="position-absolute date-input-icon" />
           </div>          
           </div>
@@ -541,16 +541,16 @@
   
     <script src="../js/air-datepicker.js"></script>
     <script>  
-    
-//  for dropdown
-$(document).ready(function () {
-  $(".radios").click(function () {
-    $(this).siblings().show();
-  });
-  $(".radios").change(function () {
-    $("details ul").hide();
-  });
-});
+        
+    //  for dropdown
+    $(document).ready(function () {
+      $(".radios").click(function () {
+        $(this).siblings().show();
+      });
+      $(".radios").change(function () {
+        $("details ul").hide();
+      });
+    });
     // datepicker   
     new AirDatepicker("#admission-date", {
         locale: {
@@ -857,7 +857,7 @@ $(document).ready(function () {
     </script> 
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
-    <svg style="display: none">
+    <svg class="d-none">
       <defs>
         <!-- dashboard -->
         <g id="dashboard-svg">

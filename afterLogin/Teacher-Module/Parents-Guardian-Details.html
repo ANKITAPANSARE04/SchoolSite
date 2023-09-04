@@ -24,12 +24,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-   
+    <style> 
+      .details-div.text-decoration-none:hover{margin-top: -1px;background-color: #d3dae3;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+    </style>
   </head>
   <body>
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -285,41 +287,52 @@
 
     <div class="module-data-section">
       <p class="fw-bold">
-        <a href="./Parents-Guardian-Listpage.html" class="text-second text-decoration-none">Parents & Guardians </a>
-         / Parents & Guardians detailing
+        <a href="./Parents-Guardian-Listpage.html" class="text-second text-decoration-none">Parents & Guardians </a> 
       </p> 
-      <h5 class="fw-bold mb-3">Parents & Guardians Detailing</h5>
-
       
+      <div class="float-end ">
+        <a class="text-decoration-none" href="./Parents-Guardian-edit.html">
+        <img class="me-2 col-9"  src="../imgs/edit.svg" />
+        </a> 
+      </div>
+
+      <h5 class="fw-bold mb-3">Parents & Guardians Detail</h5>
+
       <h6 class="fw-bold" >Son Details</h6>
       <div class="d-flex flex-wrap mb-4 ">
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-          <a href="../student-module/Student-Listpage.html" class="details-div text-decoration-none">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <a href="../student-module/Student-Details.html" class="details-div text-decoration-none">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHBvxuhpUURCevNuacU4jg5F193kI79qfgUA&usqp=CAU" />
-            <div class="my-auto">
+            <div class="my-auto ms-4">
               <p class="mb-1 fw-bold">Domnic Torreto</p>
-              <p class="mb-1">Class&emsp; <span class="text-second" >12-A</span></p>
-              <p class="mb-1">Role no. <span class="text-second" >27</span></p>
+              <div class="row ">
+              <p class="col-6 mb-1">Class <span class="float-end">:</span> </p><span class="text-second ps-0 col-6" >12-A</span>
+              <p class="col-6 mb-1">Role no. <span class="float-end">:</span></p> <span class="text-second ps-0 col-6" >27</span>
+                </div>
             </div> 
           </a>
         </div> 
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-          <a href="../student-module/Student-Listpage.html" class="details-div text-decoration-none">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <a href="../student-module/Student-Details.html" class="details-div text-decoration-none">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCeBlxyXljo_r_cv_XT8jSGg4YqCJlpQf3g&usqp=CAU" />
-            <div class="my-auto">
+            <div class="my-auto ms-4">
               <p class="mb-1 fw-bold">Domnic Torreto</p>
-              <p class="mb-1">Class&emsp; <span class="text-second" >12-A</span></p>
-              <p class="mb-1">Role no. <span class="text-second" >27</span></p>
+              <div class="row ">
+              <p class="col-6 mb-1">Class  <span class="float-end">:</span> </p><span class="text-second ps-0 col-6" >12-A</span>
+              <p class="col-6 mb-1">Role no.  <span class="float-end">:</span></p> <span class="text-second ps-0 col-6" >27</span>
+                </div>
             </div> 
           </a>
         </div> 
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
-          <a href="../student-module/Student-Listpage.html" class="details-div text-decoration-none">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
+          <a href="../student-module/Student-Details.html" class="details-div text-decoration-none">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMpVOsZtq1SkH0bL0bF78eJJnnUIDt1s8h4w&usqp=CAU" />
-            <div class="my-auto">
+            <div class="my-auto ms-4">
               <p class="mb-1 fw-bold">Domnic Torreto</p>
-              <p class="mb-1">Class&emsp; <span class="text-second" >12-A</span></p>
-              <p class="mb-1">Role no. <span class="text-second" >27</span></p>
+              <div class="row ">
+              <p class="col-6 mb-1">Class  <span class="float-end">:</span> </p><span class="text-second ps-0 col-6" >12-A</span>
+              <p class="col-6 mb-1">Role no.  <span class="float-end">:</span></p> <span class="text-second ps-0 col-6" >27</span>
+                </div>
             </div> 
           </a>
         </div>  
@@ -332,92 +345,88 @@
         <div  class="d-flex"
         style="position: absolute;left: 20px;top:-60px">
         <img style="height: 130px;width: 130px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;border-radius: 50%;"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYiVow1vhab2ni_GIkiy-Coku_bzc-xC0o51HEpzsk&s" />
-        <h5 class="ms-4 fw-bold" style="margin-top: 80px;" >Johnson Toretto</h5>
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76_9Jw4PiMzak_oKWMboP-uTVkXXLOAdrG0j_k4e95w&s" />
+        <h5 class="ms-4 fw-bold" style="margin-top: 75px;" >
+          <span>  Johnson Toretto</span>
+        </h5>
         </div>
         <div class="row mt-5 pt-4">
-          <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Father Mobile No.1
+          <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second" >
+            Father Mobile No.1<span class="float-end">:</span>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 p-1">
-            5623485102
+          <div class="col-lg-3 col-md-3 col-sm-6 p-1" >
+          5623485102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Father Occupation
+            Father Occupation<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             Own Business
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Father Mobile No.2
+            Father Mobile No.2<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             5696235102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Father’s Email id 
+            Father’s Email id <span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             jacktoretto@gmail.com
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Father Annual Income
+            Father Annual Income<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             50,00,000/-
           </div>
-        </div>
-        <div class="">
-
-        </div>
-        
+        </div> 
       </div>
 
         <br/> 
 
       <div class="details-div position-relative my-4 ">
         <div  class="d-flex"
-        style="position: absolute;left: 20px;top:-60px">
-        <img style="height: 130px;width: 130px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;border-radius: 50%;"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJih0Wr2YXTBn6YSr0I7GSJEqm54gPAedkQ&usqp=CAU" />
-        <h5 class="ms-4 fw-bold" style="margin-top: 80px;" >Cypher Toretto</h5>
+          style="position: absolute;left: 20px;top:-60px">
+          <img style="height: 130px;width: 130px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;border-radius: 50%;"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmJih0Wr2YXTBn6YSr0I7GSJEqm54gPAedkQ&usqp=CAU" />
+          <h5 class="ms-4 fw-bold " style="margin-top: 75px;" >
+            <span>  Johnson Toretto</span>
+          </h5>
         </div>
         <div class="row mt-5 pt-4">
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mother Mobile No.1
+            Mother Mobile No.1<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             5623485102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mother's Occupation
+            Mother's Occupation<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             Own Business
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mother's Mobile No.2
+            Mother's Mobile No.2<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             5696235102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mother's Email id 
+            Mother's Email id <span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             cyphertoretto@gmail.com
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mother Annual Income
+            Mother Annual Income<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             50,00,000/-
           </div>
-        </div>
-        <div class="">
-
-        </div>
-        
+        </div> 
       </div>
 
       <!-- //////////////// -->
@@ -426,58 +435,57 @@
     
       <div class="details-div position-relative my-4 ">
         <div  class="d-flex"
-        style="position: absolute;left: 20px;top:-60px">
-        <img style="height: 130px;width: 130px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;border-radius: 50%;"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76_9Jw4PiMzak_oKWMboP-uTVkXXLOAdrG0j_k4e95w&s" />
-        <h5 class="ms-4 fw-bold" style="margin-top: 80px;" >Johnson Toretto</h5>
+          style="position: absolute;left: 20px;top:-60px">
+          <img style="height: 130px;width: 130px;box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;border-radius: 50%;"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT76_9Jw4PiMzak_oKWMboP-uTVkXXLOAdrG0j_k4e95w&s" />
+          <h5 class="ms-4 fw-bold " style="margin-top: 75px;" >
+            <span>  Johnson Toretto</span>
+          </h5>
         </div>
         <div class="row mt-5 pt-4">
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Relation with Son
+            Relation with Son<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             Uncle
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Email id
+            Email id<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             jacktoretto@gmail.com
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Occupation
+            Occupation<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             Own Business
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Annual Income
+            Annual Income<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             50,00,000/-
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mobile No.1
+            Mobile No.1<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             5696235102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Mobile No.2 
+            Mobile No.2 <span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             5623485102
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1 text-second">
-            Aadhar Number
+            Aadhar Number<span class="float-end">:</span>
           </div>
           <div class="col-lg-3 col-md-3 col-sm-6 p-1">
             4636 2351 0200
           </div> 
-        </div>
-        <div class="">
-
-        </div>
+        </div> 
         
       </div>
 
@@ -489,83 +497,55 @@
     <footer class="creadit-footer fs-6">
       Power by <img src="../imgs/ST-logo.svg" /> <span class="fw-bold" >SCHOOTECH</span>
     </footer>
-    <!-- SCRIPTS -->
-    <script>  
-    // filter  div
-    $("#filter-btn").click(function () {
-      $(".filter-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-      $(".print-div").hide();
-      $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#print-btn').removeClass().addClass('btn-blue2');
-    });   
-    // print  div
-    $("#print-btn").click(function () {
-      $(".print-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-        $(".filter-div").hide();
-        $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#filter-btn').removeClass().addClass('btn-blue2');
-    });  
-    // class wise id print  div
-    $("#btn-class-wise-id").click(function () {
-      $("#class-wise-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      }); 
-      $(".print-div").toggle();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-    });  
-    // dropdown scene
-    $(document).ready(function() { 
-              $(".radios").click(function() {
-                $(this).siblings().show();
-              })
-              $(".radios").change(function() {
-                  $("details ul").hide()
-              }); 
-          }); 
-    </script>
-    <!-- SCRIPTS ENDS -->
-
-    <!-- svgs coleation -->
-    <svg style="display: none">
-    <defs> 
-      <!-- export --> 
-        <g id="export-svg">
-        <path d="M11.667 2.5V5.83333C11.667 6.05435 11.7548 6.26631 11.9111 6.42259C12.0674 6.57887 12.2793 6.66667 12.5003 6.66667H15.8337"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9.58366 17.5H5.83366C5.39163 17.5 4.96771 17.3244 4.65515 17.0118C4.34259 16.6993 4.16699 16.2754 4.16699 15.8333V4.16667C4.16699 3.72464 4.34259 3.30072 4.65515 2.98816C4.96771 2.67559 5.39163 2.5 5.83366 2.5H11.667L15.8337 6.66667V10.8333M11.667 15.8333H17.5003M17.5003 15.8333L15.0003 13.3333M17.5003 15.8333L15.0003 18.3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>  
-    </defs>
-    </svg>
-
+  
+    <!-- modal for father -->
+    
+<!-- Modal -->
+<div class="modal fade" id="faher-edit" tabindex="-1" aria-labelledby="faher-editLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="faher-editLabel">Edit Father Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mx-2">
+          <div class="col-6 p-2">
+            <p class="m-0">Father Name<span class="text-danger">*</span> </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter Father Name">
+          </div>
+          <div class="col-6 p-2">
+            <p class="m-0">Mobile No.1<span class="text-danger">*</span> </p>
+            <input type="number" maxlength="10" placeholder="Enter Mobile no." class="border-second w-100 p-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+          </div>
+          <div class="col-6 p-2">
+            <p class="m-0">Mobile No.2 </p>
+            <input type="number" maxlength="10" placeholder="Enter Mobile No." class="border-second w-100 p-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+          </div>
+          <div class="col-6 p-2">
+            <p class="m-0">Email id </p>
+            <input type="email" class="border-second w-100 p-2" placeholder="Enter Email id">
+          </div>
+          <div class="col-6 p-2">
+            <p class="m-0">Occupation </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter Occupation">
+          </div>
+          <div class="col-6 p-2">
+            <p class="m-0">Annual Income </p>
+            <input type="number" class="border-second w-100 p-2" placeholder="Enter Annual Income">
+          </div> 
+          <div class="col-6 p-2">
+            <p class="m-0">Aadhar Card Number <span class="text-danger">*</span>            </p>
+            <input type="number" placeholder="Enter Aadhar Number" maxlength="12" class="border-second w-100 p-2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+          </div> 
+        </div>
+      </div>
+      <div class="modal-footer py-4 "> 
+        <button type="button" class="btn-blue1 px-5 mx-auto">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
  <!-- sidebar svg and script -->
  
     <!-- SCRIPTS -->

@@ -25,7 +25,7 @@
   <body>
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -314,7 +314,7 @@
           </ul>
         </section>
         <!-- basic details input fields -->
-        <div class="row mx-3">
+        <div class="row px-2">
           <div class="col-lg-5 col-md-5 col-sm-12">
             <b>Address Details</b>
           </div>
@@ -336,7 +336,7 @@
           </ul>
         </section>
         <!-- Current address section -->
-        <div class="row mx-3 my-4">
+        <div class="row px-2 ">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 p-2">
             <p class="m-0">Address Line 1<span class="text-danger">*</span>            </p> 
             <input type="text"  placeholder="Enter Address Line1" />
@@ -345,32 +345,7 @@
             <p class="m-0">Address Line 2          </p>
             <input type="text"  placeholder="Enter Address Line2" />
           </div> 
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Country<span class="text-danger">*</span>            </p> 
-            <details class="custom-select">
-              <summary class="radios">
-                <input type="radio" name="country" class="default" title="Select Country" checked>
-                <input type="radio" name="country" id="ind" title="India">
-                <input type="radio" name="country" id="uk" title="UK"> 
-                <input type="radio" name="country" id="usa" title="USA"> 
-                <input type="radio" name="country" id="uae" title="UAE"> 
-              </summary>
-              <ul class="list">
-                <li>
-                  <label for="ind"> India  </label>
-                </li>
-                <li>
-                  <label for="uk">UK</label>
-                </li> 
-                <li>
-                  <label for="usa">USA</label>
-                </li> 
-                <li>
-                  <label for="uae">UAE</label>
-                </li> 
-              </ul>
-            </details> 
-          </div> 
+          
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
             <p class="m-0">State<span class="text-danger">*</span>            </p> 
             <details class="custom-select">
@@ -649,7 +624,7 @@
 
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
-    <svg style="display: none">
+    <svg class="d-none">
       <defs>
         <!-- dashboard -->
         <g id="dashboard-svg">

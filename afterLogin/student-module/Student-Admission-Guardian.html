@@ -29,7 +29,7 @@
   <body>
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -416,18 +416,18 @@
                       <details class="custom-select">
                         <summary class="radios">
                           <input type="radio" name="gr" class="default" title="Select Relation" checked>
-                          <input type="radio" name="gr" id="gr1" title="Father">
-                          <input type="radio" name="gr" id="gr2" title="Mother"> 
+                          <input type="radio" name="gr" id="gr1" title="Aunt">
+                          <input type="radio" name="gr" id="gr2" title="Uncle"> 
                           <input type="radio" name="gr" id="gr3" title="Brother"> 
                           <input type="radio" name="gr" id="gr4" title="Sister"> 
-                          <input type="radio" name="gr" id="gr5" title="Other"> 
+                          <input type="radio" name="gr" id="gr5" title="cusin"> 
                         </summary>
                         <ul class="list">
                           <li>
-                            <label for="gr1"> Father </label>
+                            <label for="gr1"> Aunt </label>
                           </li>
                           <li>
-                            <label for="gr2"> Mother </label>
+                            <label for="gr2"> Uncle </label>
                           </li> 
                           <li>
                             <label for="gr3"> Brother </label>
@@ -436,7 +436,7 @@
                             <label for="gr4"> Sister </label>
                           </li> 
                           <li>
-                            <label for="gr5"> Other </label>
+                            <label for="gr5"> cusin </label>
                           </li> 
                         </ul>
                       </details> 
@@ -728,7 +728,7 @@ $(document).ready(function () {
 
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
-    <svg style="display: none">
+    <svg class="d-none">
       <defs>
         <!-- dashboard -->
         <g id="dashboard-svg">

@@ -6,25 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- used links below -->
-    <link rel="stylesheet" href="../css/Style.css" /> 
+    <link rel="stylesheet" href="../css/Style.css" />
+    <script src="../js/main.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <!-- bootstrap 5 --> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
   </head>
   <body>
     <!-- topnav -->
@@ -160,7 +154,7 @@
         </a>
 
         <!-- parents -->
-        <a class="nav__items active" href="./Parents-Guardian-Listpage.html" >
+        <a href="./Parents-Guardian-Listpage.html" class="nav__items active">
           <svg viewBox="0 0 19 19">
             <use xlink:href="#parent-svg"></use>
           </svg> 
@@ -281,288 +275,306 @@
     </nav>
     <!-- sidebar ends here -->
   
-    <!-- student list page start -->
-
     <div class="module-data-section">
       
-      <p class="fw-bold">Parents & Guardians</p>
-      <h5 class="fw-bold">Parents & Guardians</h5>
+      <p class="fw-bold"> 
+        <a class="text-second text-decoration-none " href="./Parents-Guardian-Listpage.html"> Parents & Guardians</a>
+      </p>
+      <h5 class="fw-bold">Edit Parents & Guardians</h5>
+ 
+      <!-- parent -->
+      <div class="details-shadow p-3 my-3" >
+        <h5 class="fw-bold"></h5>
+        <p class="m-0 fw-bold">Parent’s Details</p>
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father Name<span class="text-danger">*</span> </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter father Name" value="Dominic" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father Mobile No.1<span class="text-danger">*</span> </p>
+            <input type="number" class="border-second w-100 p-2" maxlength="10" placeholder="Enter mobile number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father Mobile No.2 </p>
+            <input type="number" class="border-second w-100 p-2" maxlength="10" placeholder="Enter mobile number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father's Email id </p>
+            <input type="email" class="border-second w-100 p-2"  placeholder="Enter Mother email id" value="tore.domi@gmail.com" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father Occupation </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter Occupation" value="+91 9876543212" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Father Annual Income </p>
+            <input type="number" class="border-second w-100 p-2" placeholder="Enter Father Annual Income " value="+91 9876543212" />
+          </div> 
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Name<span class="text-danger">*</span> </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter Mother Name"  value="Tina" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Mobile No.1<span class="text-danger">*</span> </p>
+            <input type="number" class="border-second w-100 p-2" maxlength="10" placeholder="Enter mobile number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Mobile No.2</p>
+            <input type="number" class="border-second w-100 p-2" maxlength="10" placeholder="Enter mobile number" 
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Email id</p>
+            <input type="email" class="border-second w-100 p-2" placeholder="Enter Mother email id" value="" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Occupation </p>
+            <input type="text" class="border-second w-100 p-2" placeholder="Enter Mother Occupation" value="Home Maker" />
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6 py-2">
+            <p class="mb-1 text-third">Mother Annual Income </p> 
+            <input type="number" class="border-second w-100 p-2" placeholder="Enter Mother Annual Income " value="+91 9876543212" />
+          </div>  
+        </div>
+        
+        <p class="m-0 mt-4 fw-bold">Guardian Details</p>
+        
+        <div class="row px-2 my-2"> 
+          <div class="col-lg-12 col-md-12 col-sm-12 ps-1">
+            <fieldset id="group1" class="d-flex">
+              <span class="me-4 d-flex"><input class="w-auto me-2" type="radio" id="f" name="group1" checked >Father  </span>
+              <span class="me-4 d-flex"><input class="w-auto me-2" type="radio" id="m" name="group1">Mother  </span>
+              <span class="me-4 d-flex"><input class="w-auto me-2" type="radio" id="g" name="group1">Other  </span>
+            </fieldset> 
+          </div>
+          <!-- radio button selection input container  -->
+          <div class="col-12">
+            <div id="fd">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Father Name           </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Father Name" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.1          </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile no." class="border-second w-100 p-2"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.2             </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile No." class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Email id </p>
+                  <input type="email" class="border-second w-100 p-2" placeholder="Enter Email id" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Occupation            </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Occupation" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0" >Annual Income           </p>
+                  <input type="number" class="border-second w-100 p-2" placeholder="Enter Annual Income" />
+                </div> 
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Aadhar Card Number <span class="text-danger">*</span>            </p>
+                  <input type="number" placeholder="Enter Aadhar Number" maxlength="12" class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div> 
+              </div>
+            </div>
+            <div id="md">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mother Name            </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Mother Name" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.1          </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile no." class="border-second w-100 p-2"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.2             </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile No." class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Email id </p>
+                  <input type="email" class="border-second w-100 p-2" placeholder="Enter Email id" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Occupation            </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Occupation" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Annual Income           </p>
+                  <input type="number" class="border-second w-100 p-2" placeholder="Enter Annual Income" />
+                </div> 
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Aadhar Card Number<span class="text-danger">*</span>           </p>
+                  <input type="number" placeholder="Enter Aadhar Number" maxlength="12" class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div> 
+              </div>
+            </div> 
+            <div id="gd">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2 student-edit-select">
+                  <p class="m-0">Guardian Relation<span class="text-danger">*</span>            </p>  
+                    <details class="edit-select border-second">
+                      <summary class="radios">
+                        <input type="radio" name="gr" class="default" title="Select Relation" checked>
+                        <input type="radio" name="gr" id="gr1" title="Aunt">
+                        <input type="radio" name="gr" id="gr2" title="Uncle"> 
+                        <input type="radio" name="gr" id="gr3" title="Brother"> 
+                        <input type="radio" name="gr" id="gr4" title="Sister"> 
+                        <input type="radio" name="gr" id="gr5" title="Cusin"> 
+                      </summary>
+                      <ul class="list">
+                        <li>
+                          <label for="gr1"> Aunt </label>
+                        </li>
+                        <li>
+                          <label for="gr2"> Uncle </label>
+                        </li> 
+                        <li>
+                          <label for="gr3"> Brother </label>
+                        </li> 
+                        <li>
+                          <label for="gr4"> Sister </label>
+                        </li> 
+                        <li>
+                          <label for="gr5"> Cusin </label>
+                        </li> 
+                      </ul>
+                    </details> 
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Guardian Name<span class="text-danger">*</span>            </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Guardian Name" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.1<span class="text-danger">*</span>            </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile no." class="border-second w-100 p-2"
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Mobile No.2             </p>
+                  <input type="number" maxlength="10" placeholder="Enter Mobile No."  class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Email id<span class="text-danger">*</span>   </p>
+                  <input type="email" class="border-second w-100 p-2" placeholder="Enter Email id" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Occupation            </p>
+                  <input type="text" class="border-second w-100 p-2" placeholder="Enter Occupation" />
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Annual Income           </p>
+                  <input type="number" class="border-second w-100 p-2" placeholder="Enter Annual Income" />
+                </div> 
+                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+                  <p class="m-0">Aadhar Card Number <span class="text-danger">*</span>  </p>
+                  <input type="number" placeholder="Enter Aadhar Number" maxlength="12" class="border-second w-100 p-2"
+                  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                </div> 
+              </div>
+            </div> 
+          </div> 
 
-      <!-- count collection -->
-      <div class="count-collection">
-        <div class="count-item">
-          <img src="../imgs/students.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
         </div>
-        <div class="count-item">
-          <img src="../imgs/teacher-male.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/teacher-female.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/phone.svg" />
-          <div class="count-info ">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Installed App</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/phone-cancel.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Not Installed </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- serch and button colleaction -->
-      <div class="btn-collection my-2 ">
-        <div class="search-input me-3">
-          <span class="material-symbols-outlined"> search </span>
-          <input
-            type="text"
-            class="border-0"
-            placeholder="Search by name or mobile no."
-          />
-        </div>
-        <div class="d-flex flex-wrap"> 
-          <button class="btn-blue2">
-            <svg viewBox="0 0 20 20">
-              <use xlink:href="#export-svg"></use>
-            </svg>  Export
-          </button> 
-        </div>
-      </div>
-   
-      <!-- student list as table -->
-      <div class="table-container text-center">
-        <table class="table">
-          <thead>
-            <tr>
-              <td>Profile</td>
-              <td>Guardians Name</td> 
-              <td>Mobile No.</td>
-              <td>Gender</td>
-              <td>Email id</td> 
-              <td>Status</td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="https://cdn.pixabay.com/photo/2014/01/18/06/51/girl-247302_640.jpg"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/test-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/teacher-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/student-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>  
-          </tbody>
-        </table>
-      </div>
-      <div class="tbl-pagination my-3">
-        <ul >
-          <li>
-            <a href="" class="material-symbols-outlined" >
-            keyboard_double_arrow_left
-            </a>
-          </li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-              navigate_before
-            </a>
-          </li>
-          <li><a href="" >1</a></li>
-          <li class="active"><a href=""  >2</a></li>
-          <li><a href="" >3</a></li>
-          <li><a href="" >4</a></li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-              chevron_right
-            </a>
-          </li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-            keyboard_double_arrow_right
-            </a>
-          </li>
-        </ul>
-
       </div>
  
+        <!-- Attachment -->
+        <div class="details-shadow p-3 my-3" >
+          <h5 class="fw-bold">Attachments</h5> 
+          <div class="d-flex flex-wrap attachmet-collection ">
+       
+              <div class="attachmet-item position-relative">
+                <span class="material-symbols-outlined edit-img-icon " > photo_camera </span>
+                <input type="file" class="edit-img-input" />
+                <div class="attached-img"><img src="../imgs/mother.png" /></div>
+                <p class="bg-first text-white p-2 mb-0 mt-2 rounded text-center">Mother</p>
+              </div> 
+ 
+              <div class="attachmet-item position-relative ">
+                <span class="material-symbols-outlined edit-img-icon " > photo_camera </span>
+                <input type="file" class="edit-img-input" />
+                <div class="attached-img"><img class="attached-img" src="../imgs/father.png" /></div>
+                <p class="bg-first text-white p-2 mb-0 mt-2 rounded text-center">Father</p>
+              </div> 
+ 
+              <div class="attachmet-item position-relative ">
+                <span class="material-symbols-outlined edit-img-icon " > photo_camera </span>
+                <input type="file" class="edit-img-input" />
+                <div class="attached-img"><img class="attached-img" src="../imgs/guardian.png" /></div>
+                <p class="bg-first text-white p-2 mb-0 mt-2 rounded text-center">Guardian</p>
+              </div> 
+  
+          </div> 
+        </div>
+
+
+        <div class="text-center my-4">
+          <button class="btn-blue1 px-4" data-bs-target="#smdl"   data-bs-toggle="modal">Save</button>
+        </div>
     </div>
-    <!-- student list page end -->
- 
+    <!-- footer -->
     <footer class="creadit-footer fs-6">
       Power by <img src="../imgs/ST-logo.svg" /> <span class="fw-bold" >SCHOOTECH</span>
     </footer>
- 
+     
     <!--  success Modal -->
-    <div class="modal fade" id="success-popup" tabindex="-1" aria-labelledby="success-popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-first text-white ">
-        <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
-          <h5 class="modal-title print-search border-0" >
-            <span class="material-symbols-outlined id-print-found fs-5 align-middle "> done </span>
-            Files Imported Successfully!!!</h5>
-            <span class="material-symbols-outlined align-middle" data-bs-dismiss="modal" aria-label="Close"> close </span> 
-        </div>  
+    <div class="modal fade" id="smdl" tabindex="-1" aria-labelledby="success-popupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-first text-white ">
+          <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
+            <h5 class="modal-title print-search border-0" >
+              <span class="material-symbols-outlined id-print-found fs-6 baseline"> done </span>
+              Guardian Data Edited successfully!!!</h5>
+              <a  href="./Parents-Guardian-Listpage.html" 
+              class="material-symbols-outlined align-middle text-white text-decoration-none"> close </a> 
+          </div>  
+        </div>
       </div>
     </div>
-    </div>
-     
-    <!-- SCRIPTS -->
-    <script>  
-    // filter  div
-    $("#filter-btn").click(function () {
-      $(".filter-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-      $(".print-div").hide();
-      $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#print-btn').removeClass().addClass('btn-blue2');
-    });   
-    // print  div
-    $("#print-btn").click(function () {
-      $(".print-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-        $(".filter-div").hide();
-        $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#filter-btn').removeClass().addClass('btn-blue2');
-    });  
-    // class wise id print  div
-    $("#btn-class-wise-id").click(function () {
-      $("#class-wise-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      }); 
-      $(".print-div").toggle();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-    });  
-    // dropdown scene
-    $(document).ready(function() { 
-              $(".radios").click(function() {
-                $(this).siblings().show();
-              })
-              $(".radios").change(function() {
-                  $("details ul").hide()
-              }); 
-          }); 
+        
+
+    <script>
+
+    $('#f').click( function() {
+      $('#fd').show();
+      $('#md').hide();
+      $('#gd').hide();
+    })
+    $('#m').click( function() {
+      $('#fd').hide();
+      $('#md').show();
+      $('#gd').hide();
+    })
+    $('#g').click( function() {
+      $('#fd').hide();
+      $('#md').hide();
+      $('#gd').show();
+    }) 
+        // edit page dropdown close code
+    $(document).ready(function () {
+    $(".radios").click(function () {
+    $(this).siblings().show();
+    });
+    $(".radios").change(function () {
+    $("details ul").hide();
+    });
+    });
     </script>
-    <!-- SCRIPTS ENDS -->
-
-    <!-- svgs coleation -->
-    <svg class="d-none">
-    <defs> 
-      <!-- export --> 
-        <g id="export-svg">
-        <path d="M11.667 2.5V5.83333C11.667 6.05435 11.7548 6.26631 11.9111 6.42259C12.0674 6.57887 12.2793 6.66667 12.5003 6.66667H15.8337"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9.58366 17.5H5.83366C5.39163 17.5 4.96771 17.3244 4.65515 17.0118C4.34259 16.6993 4.16699 16.2754 4.16699 15.8333V4.16667C4.16699 3.72464 4.34259 3.30072 4.65515 2.98816C4.96771 2.67559 5.39163 2.5 5.83366 2.5H11.667L15.8337 6.66667V10.8333M11.667 15.8333H17.5003M17.5003 15.8333L15.0003 13.3333M17.5003 15.8333L15.0003 18.3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>  
-    </defs>
-    </svg>
-
- <!-- sidebar svg and script -->
- 
     <!-- SCRIPTS -->
     <script>
       // attendance dropdown
@@ -760,8 +772,7 @@
 
         $("#notification-div").hide();
       });
-    </script>
-
+    </script> 
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
     <svg class="d-none">

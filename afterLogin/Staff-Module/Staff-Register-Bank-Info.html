@@ -6,25 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- used links below -->
-    <link rel="stylesheet" href="../css/Style.css" /> 
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/Style.css" />
+    <script src="../js/main.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <!-- bootstrap 5 --> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-     
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
   </head>
   <body>
     <!-- topnav -->
@@ -142,7 +138,7 @@
         </a>
 
         <!-- students -->
-        <a class="nav__items" href="../student-module/Student-Listpage.html" >
+        <a class="nav__items " href="../student-module/Student-Listpage.html" >
           <!-- <div class="nav__items "> -->
             <svg viewBox="0 0 20 20">
               <use xlink:href="#students-svg"></use>
@@ -152,7 +148,7 @@
         </a>
 
         <!-- teachers -->
-        <a class="nav__items" href="./Teacher-Listpage.html">
+        <a class="nav__items" href="../Teacher-Module/Teacher-Listpage.html">
           <svg viewBox="0 0 21 21">
             <use xlink:href="#teacher-svg"></use>
           </svg> 
@@ -160,7 +156,7 @@
         </a>
 
         <!-- parents -->
-        <a class="nav__items active" href="./Parents-Guardian-Listpage.html" >
+        <a href="#" class="nav__items">
           <svg viewBox="0 0 19 19">
             <use xlink:href="#parent-svg"></use>
           </svg> 
@@ -187,7 +183,7 @@
           <!-- <p class="sidebar-link"><a class="ps-1" href=""> > Students</a></p> -->
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Students</a></p>
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Teachers</a></p>
-          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staffs</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Staffs</a></p>
         </div>
 
         <!-- daily timtable -->
@@ -264,7 +260,7 @@
         </a>
 
         <!-- setting -->
-        <div class="nav__items" id="sett-togg-icon">
+        <div class="nav__items active" id="sett-togg-icon">
           <svg viewBox="0 0 20 20">
             <use xlink:href="#setting-svg"></use>
           </svg>
@@ -275,7 +271,7 @@
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
-          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="./Staff-Listpage.html"> Staff</a> </p> 
         </div>
       </div>
     </nav>
@@ -284,285 +280,97 @@
     <!-- student list page start -->
 
     <div class="module-data-section">
-      
-      <p class="fw-bold">Parents & Guardians</p>
-      <h5 class="fw-bold">Parents & Guardians</h5>
+      <p class="fw-bold">Staff</p>
+      <h5 class="fw-bold">Registration</h5>
 
-      <!-- count collection -->
-      <div class="count-collection">
-        <div class="count-item">
-          <img src="../imgs/students.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/teacher-male.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/teacher-female.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Text</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/phone.svg" />
-          <div class="count-info ">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Installed App</span>
-          </div>
-        </div>
-        <div class="count-item">
-          <img src="../imgs/phone-cancel.svg" />
-          <div class="count-info">
-            <span class="fw-bold fs-4">12</span>
-            <br />
-            <span>Not Installed </span>
-          </div>
-        </div>
-      </div>
-
-      <!-- serch and button colleaction -->
-      <div class="btn-collection my-2 ">
-        <div class="search-input me-3">
-          <span class="material-symbols-outlined"> search </span>
-          <input
-            type="text"
-            class="border-0"
-            placeholder="Search by name or mobile no."
-          />
-        </div>
-        <div class="d-flex flex-wrap"> 
-          <button class="btn-blue2">
-            <svg viewBox="0 0 20 20">
-              <use xlink:href="#export-svg"></use>
-            </svg>  Export
-          </button> 
-        </div>
-      </div>
-   
-      <!-- student list as table -->
-      <div class="table-container text-center">
-        <table class="table">
-          <thead>
-            <tr>
-              <td>Profile</td>
-              <td>Guardians Name</td> 
-              <td>Mobile No.</td>
-              <td>Gender</td>
-              <td>Email id</td> 
-              <td>Status</td>
-              <td></td>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="https://cdn.pixabay.com/photo/2014/01/18/06/51/girl-247302_640.jpg"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/test-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/teacher-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>
-            <tr>
-              <td class="py-0">
-                <img class="user-avatar" 
-                  src="../imgs/student-avatar.png"
-                />
-              </td> 
-              <td>Letty Torreto</td>
-              <td>8596874658</td>
-              <td>Male</td>
-              <td>lt@gmail.com</td> 
-              <td><img src="../imgs/td-email.svg" /> </td>
-              <td>
-                <a class="text-decoration-none" href="./Parents-Guardian-Details.html"> <img class="mx-2" src="../imgs/eye.svg" /> </a> 
-                <a class="text-decoration-none" href="./Parents-Guardian-edit.html"> <img class="mx-2" src="../imgs/edit.svg" /> </a> 
-              </td> 
-            </tr>  
-          </tbody>
-        </table>
-      </div>
-      <div class="tbl-pagination my-3">
-        <ul >
-          <li>
-            <a href="" class="material-symbols-outlined" >
-            keyboard_double_arrow_left
-            </a>
-          </li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-              navigate_before
-            </a>
-          </li>
-          <li><a href="" >1</a></li>
-          <li class="active"><a href=""  >2</a></li>
-          <li><a href="" >3</a></li>
-          <li><a href="" >4</a></li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-              chevron_right
-            </a>
-          </li>
-          <li>
-            <a href="" class="material-symbols-outlined" >
-            keyboard_double_arrow_right
-            </a>
-          </li>
+      <div class="studenet-admission-section">
+      <!-- stepper -->
+      <section class="step-wizard">
+        <ul class="step-wizard-list">
+            <li class="step-wizard-item completed-item">
+                <span class="progress-count">1</span>
+                <span class="progress-label">Basic</span>
+            </li>
+            <li class="step-wizard-item completed-item">
+                <span class="progress-count">2</span>
+                <span class="progress-label">Address</span>
+            </li>
+            <li class="step-wizard-item completed-item">
+                <span class="progress-count">3</span>
+                <span class="progress-label">Staff</span>
+            </li>
+            <li class="step-wizard-item completed-item">
+                <span class="progress-count">4</span>
+                <span class="progress-label">Additional</span>
+            </li>
+            <li class="step-wizard-item current-item">
+                <span class="progress-count">4</span>
+                <span class="progress-label">Bank</span>
+            </li> 
+            <li class="step-wizard-item">
+                <span class="progress-count">4</span>
+                <span class="progress-label">Attachments</span>
+            </li>
         </ul>
+      </section>
+        <!-- basic details input fields -->
+        <div class="row px-1 ">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <b>Bank Details</b>
+          </div> 
+        </div>
+        <div class="row px-1 my-2">  
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0" >Bank Number<span class="text-danger">*</span> </p>
+            <input type="text" placeholder="Enter bank number" />
+          </div>  
+          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">IFSC Code<span class="text-danger">*</span> </p>
+            <input type="text" placeholder="Enter IFSC code" />
+          </div> 
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Branch Name<span class="text-danger">*</span> </p>
+            <input type="text" placeholder="Enter branch name" />         
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Bank Holder Name<span class="text-danger">*</span> </p>
+             <input type="text" placeholder="Enter bank holder name" />         
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Aadhar Number<span class="text-danger">*</span> </p>
+             <input type="number" placeholder="Enter aadhar number" />         
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2">
+            <p class="m-0">Pan Number<span class="text-danger">*</span> </p>
+             <input type="text" placeholder="Enter PAN number" />          
+          </div>
+        </div>
+
+        
+        <div class="text-center my-5 pb-5">
+          <a  class="btn-blue2 p-2 " href="./Staff-Regiater-Additional.html">
+            <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_back </small>
+            Previous
+          </a>
+          <a  class="btn-blue2 px-4 py-2 " href="Staff-Register-Attachments.html">
+            Next
+            <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_forward </small>
+          </a>
+        </div>
+        <!-- <div class="text-center">
+        <button class="btn-blue1 px-4 ">Next</button>
+        </div> -->
+
 
       </div>
- 
     </div>
     <!-- student list page end -->
- 
+
     <footer class="creadit-footer fs-6">
       Power by <img src="../imgs/ST-logo.svg" /> <span class="fw-bold" >SCHOOTECH</span>
     </footer>
- 
-    <!--  success Modal -->
-    <div class="modal fade" id="success-popup" tabindex="-1" aria-labelledby="success-popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-first text-white ">
-        <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
-          <h5 class="modal-title print-search border-0" >
-            <span class="material-symbols-outlined id-print-found fs-5 align-middle "> done </span>
-            Files Imported Successfully!!!</h5>
-            <span class="material-symbols-outlined align-middle" data-bs-dismiss="modal" aria-label="Close"> close </span> 
-        </div>  
-      </div>
-    </div>
-    </div>
-     
-    <!-- SCRIPTS -->
-    <script>  
-    // filter  div
-    $("#filter-btn").click(function () {
-      $(".filter-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-      $(".print-div").hide();
-      $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#print-btn').removeClass().addClass('btn-blue2');
-    });   
-    // print  div
-    $("#print-btn").click(function () {
-      $(".print-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      });
-        $(".filter-div").hide();
-        $("#class-wise-div").hide();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-        $('#filter-btn').removeClass().addClass('btn-blue2');
-    });  
-    // class wise id print  div
-    $("#btn-class-wise-id").click(function () {
-      $("#class-wise-div").toggle(function () {
-        $("#panel").animate(
-          {
-            height: "150",
-            padding: "20px 0",
-            backgroundColor: "#000000",
-            opacity: 0.8,
-          },
-          500
-        );
-      }); 
-      $(".print-div").toggle();
-        $(this).toggleClass('btn-blue2 btn-blue1');
-    });  
-    // dropdown scene
-    $(document).ready(function() { 
-              $(".radios").click(function() {
-                $(this).siblings().show();
-              })
-              $(".radios").change(function() {
-                  $("details ul").hide()
-              }); 
-          }); 
-    </script>
-    <!-- SCRIPTS ENDS -->
-
-    <!-- svgs coleation -->
-    <svg class="d-none">
-    <defs> 
-      <!-- export --> 
-        <g id="export-svg">
-        <path d="M11.667 2.5V5.83333C11.667 6.05435 11.7548 6.26631 11.9111 6.42259C12.0674 6.57887 12.2793 6.66667 12.5003 6.66667H15.8337"   stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        <path d="M9.58366 17.5H5.83366C5.39163 17.5 4.96771 17.3244 4.65515 17.0118C4.34259 16.6993 4.16699 16.2754 4.16699 15.8333V4.16667C4.16699 3.72464 4.34259 3.30072 4.65515 2.98816C4.96771 2.67559 5.39163 2.5 5.83366 2.5H11.667L15.8337 6.66667V10.8333M11.667 15.8333H17.5003M17.5003 15.8333L15.0003 13.3333M17.5003 15.8333L15.0003 18.3333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>  
-    </defs>
-    </svg>
-
- <!-- sidebar svg and script -->
- 
+    <!-- sidebar svg and script -->
+    
     <!-- SCRIPTS -->
     <script>
       // attendance dropdown
@@ -1334,5 +1142,6 @@
         </g>
       </defs>
     </svg>
+     
   </body>
 </html>

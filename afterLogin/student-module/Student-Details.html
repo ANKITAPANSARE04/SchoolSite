@@ -25,13 +25,17 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
- 
+    <style>
+      .tbl-result td:first-child{width: 40%;}
+      .tbl-result td:nth-child(2),
+      .tbl-result td:nth-child(3){text-align: center;}
+    </style>
    </head>
   <body>
 
     <!-- topnav -->
     <nav class="navbar justify-content-between p-2">
-      <div class="navbar-brand px-2">
+      <div class="navbar-brand">
         <img class="nav-logo" src="../imgs/ST-logo.svg" />
         <span class="logo-name"> SCHOOTECH </span>
       </div>
@@ -277,7 +281,7 @@
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
           <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
-          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/"> Staff</a></p> 
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
         </div>
       </div>
     </nav>
@@ -299,7 +303,7 @@
         <!-- <span class="material-symbols-outlined btn-blue2 px-3 fw-normal my-0"> border_color </span>
         <span class="material-symbols-outlined btn-blue2 px-3 fw-normal my-0"> edit_square </span> -->
       </div>
-      <h5 class="fw-bold">View Detailing</h5>
+      <h5 class="fw-bold">View Detailing</h5> 
       
       <div class="student-details-module">
         <!-- left side --> 
@@ -354,12 +358,12 @@
                   <td class="p-1" >O+</td>
                 </tr>
                 <tr>
-                  <td class="p-1 text-second" >Phone</td>
+                  <td class="p-1 text-second" >Student Phone No.</td>
                   <td class="p-1" >:</td>
                   <td class="p-1" >9876543212</td>
                 </tr>
                 <tr>
-                  <td class="p-1 text-second" >Email</td>
+                  <td class="p-1 text-second" >Student's Email Id</td>
                   <td class="p-1" >:</td>
                   <td class="p-1" >abc@gmail.com</td>
                 </tr>
@@ -369,20 +373,65 @@
                   <td class="p-1" >Carter Toretto</td>
                 </tr>
                 <tr>
+                  <td class="p-1 text-second" >Father Mobile no.</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >9876543212, 9876543212</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Father Occupation</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >Sale Manager</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Father's Annual Incone</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >2,00,000</td>
+                </tr>
+                <tr>
                   <td class="p-1 text-second" >Mother Name</td>
                   <td class="p-1" >:</td>
                   <td class="p-1" >Cypher Toretto</td>
                 </tr>
                 <tr>
-                  <td class="p-1 text-second" >Guardian Number</td>
+                  <td class="p-1 text-second" >Mother Mobile no.</td>
                   <td class="p-1" >:</td>
-                  <td class="p-1" >1234567898, 1209873645</td>
+                  <td class="p-1" >9876543212, 9876543212</td>
                 </tr>
                 <tr>
-                  <td class="p-1 text-second" >Nationality</td>
+                  <td class="p-1 text-second" >Mother Occupation</td>
                   <td class="p-1" >:</td>
-                  <td class="p-1" >Indian</td>
+                  <td class="p-1" >Home Maker</td>
                 </tr>
+                <tr>
+                  <td class="p-1 text-second" >Mother's Annual Incone</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >-</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Guardian Relation</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >Aunt</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Guardian Name</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >Tina Toretto</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Guardian Mobile no.</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >9876543212, 9876543212</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Guardian Occupation</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >Home Maker</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Guardian's Annual Incone</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1" >-</td>
+                </tr> 
                 <tr>
                   <td class="p-1 text-second" >Religion</td>
                   <td class="p-1" >:</td>
@@ -392,26 +441,31 @@
                   <td class="p-1 text-second" >Cast</td>
                   <td class="p-1" >:</td>
                   <td class="p-1" >OBC</td>
-                </tr>
-                <tr>
-                  <td class="p-1 text-second" >E-Mail</td>
-                  <td class="p-1" >:</td>
-                  <td class="p-1" >Angel58@yahoo.com</td>
                 </tr> 
                 <tr>
-                  <td class="p-1 text-second" >Address</td>
+                  <td class="p-1 text-second" >Mother Tounge</td>
                   <td class="p-1" >:</td>
-                  <td class="p-1 wrap-it-addr" >House 10, Road 6, AustraliaHouse 10, Road 6,10, Road 6, AustraliaHouse 10, Road 6,10, Road 6, AustraliaHouse 10, Road 6, Australia</td>
-                </tr>
-               <tr>
-                <td>
-                <p class="fw-bold text-center py-3 mb-0" >Previous  School Details </p>
-                </td>
-                </tr>
-                  <tr>
-                  <td class="p-1 text-second" >School Name</td>
+                  <td class="p-1" >OBC's</td>
+                </tr> 
+                <tr>
+                  <td class="p-1 text-second" >Current Address</td>
                   <td class="p-1" >:</td>
-                  <td class="p-1" >Demo School Name</td>
+                  <td class="p-1 wrap-it-addr" >House 10, Road 6, AustraliaHouse 10, Road 6,10, Road 6, AustraliaHouse 10, Road 6</td>
+                </tr>
+                <tr>
+                  <td class="p-1 text-second" >Permanenet Address</td>
+                  <td class="p-1" >:</td>
+                  <td class="p-1 wrap-it-addr" >House 10, Road 6, AustraliaHouse 10, Road 6,10, Road 6, AustraliaHouse 10, Road 6</td>
+                </tr>
+                <tr>
+                  <td>
+                    <p class="fw-bold py-3 mb-0" >Previous  School Details </p>
+                  </td>
+                </tr>
+                <tr>
+                    <td class="p-1 text-second" >School Name</td>
+                    <td class="p-1" >:</td>
+                    <td class="p-1" >Demo School Name</td>
                 </tr> 
                 <tr>
                   <td class="p-1 text-second" >Board Name</td>
@@ -440,10 +494,10 @@
             <div class="w-auto">
               <div class="id-card-block p-3 ">
                 <img src="../imgs/id-logo.svg" />
-                <div class="text-center my-3">
+                <div class="id-card-avatar my-3">
                   <img class="student-detail-avatar" src="../imgs/student-avatar.png" />
                 </div>
-                <h5 class="m-2 fw-bolder">Dominic Toretto</h5>
+                <h5 class=" fw-bolder text-center ">Dominic Toretto</h5>
                 <table class="">
                   <tr>
                     <td class="fw-bold">Standard</td>
@@ -514,7 +568,28 @@
           </div>
           <!-- fees table -->
           <div class="details-shadow tbl-details m-2 p-3">
-            <h5 class="fw-bold">Fees</h5>
+            <div class="d-flex justify-content-between mb-2">
+              <h5 class="fw-bold my-1">Fees</h5>
+              <div class="">
+                <button class="btn-blue2 px-3 ms-0 mt-0">
+                  <svg viewBox="0 0 20 20">
+                    <use xlink:href="#pending-fee-svg"></use>
+                  </svg> 
+                  Previous Fees Pending
+                </button>
+                <button class="btn-blue2 px-3 ms-0 mt-0"  data-bs-toggle="modal" data-bs-target="#fess-remind-popup">
+                  <svg viewBox="0 0 20 20">
+                    <use xlink:href="#fees-reminder-svg"></use>
+                  </svg> 
+                  Fees Remind
+                </button>              
+                <button class="btn-blue2 px-3 ms-0 mt-0" id="print-btn">
+                  <svg viewBox="0 0 20 20">
+                    <use xlink:href="#print-svg"></use>
+                  </svg> Print
+                </button>
+              </div>
+            </div>
             <table class="fees-table">
               <thead>
                 <tr>
@@ -898,7 +973,7 @@
             
             <div class="d-flex justify-content-between">
               <div class="position-relative">
-                <button class="btn-blue2 px-3 ms-0 my-3 exm-filter-btn"><img src="../imgs/btn-filter.svg"/> Filter </button>  
+                <button class="btn-blue2 px-3 ms-0 my-3 exm-filter-btn py-1"><img src="../imgs/btn-filter.svg"/> Filter </button>  
                 <div class="filter-exm">
                   <p class="my-0 pointer py-1 px-2 ">Internal Class Test</p>
                   <p class="my-0 pointer py-1 px-2 ">Class Test</p>
@@ -906,11 +981,14 @@
                   <p class="my-0 pointer py-1 px-2 ">Annual Semester Test</p>
                 </div>
               </div>
-              
-              <span class="material-symbols-outlined btn-blue2 px-4 py-2 fs-5 my-auto"> print </span>
+              <button class="btn-blue2 px-3 my-auto py-1">
+                <span class="material-symbols-outlined align-middle fs-5"> print </span>
+                Print
+
+              </button>
               <!-- <button class="btn-blue1 px-3 my-auto">Print Result</button> -->
             </div>
-            <table class=" ">
+            <table class="tbl-result">
               <thead>
                 <tr>
                   <td>Subject </td>
@@ -958,7 +1036,7 @@
                </tr>
               </tfoot>
             </table> 
-            <div class="btn-blue2 mx-0 d-flex justify-content-around">
+            <div class="border-second mt-1 mx-0 d-flex justify-content-around">
               <p class="my-1"><span class="text-second mx-3" >Result :</span><span>-</span></p>
               <p class="my-1"><span class="text-second mx-3" >Percentage :</span><span>0%</span></p>
             </div>
@@ -1291,19 +1369,34 @@
       
     <!--  success Modal -->
     <div class="modal fade" id="sent-popup" tabindex="-1" aria-labelledby="success-popupModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content bg-first text-white ">
-        <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
-          <h5 class="modal-title print-search border-0" >
-            <span class="material-symbols-outlined id-print-found fs-6 align-baseline "> done </span>
-            Notice Sent!!!</h5>
-            <a  href="./Student-Listpage.html" 
-            class="material-symbols-outlined baseline text-white text-decoration-none"> close </a> 
-        </div>  
+      <div class="modal-dialog">
+        <div class="modal-content bg-first text-white ">
+          <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
+            <h5 class="modal-title print-search border-0" >
+              <span class="material-symbols-outlined id-print-found fs-6 align-baseline "> done </span>
+              Notice Sent!!!</h5>
+              <a  href="./Student-Listpage.html" 
+              class="material-symbols-outlined baseline text-white text-decoration-none"> close </a> 
+          </div>  
+        </div>
       </div>
-    </div>
-    </div>
+      </div>
 
+    <!--  success Modal -->
+    <div class="modal fade" id="fess-remind-popup" tabindex="-1" aria-labelledby="fess-remind-popupLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-first text-white ">
+          <div class="modal-header bg-first text-white  border-0 print-div py-1 rounded-pill" >
+            <h5 class="modal-title print-search border-0" >
+              <span class="material-symbols-outlined id-print-found fs-6 align-baseline "> done </span>
+              Fees Reminder Sent Successfully!!!</h5>
+              <spaan class=" text-white" data-bs-dismiss="modal" >  x </spaan>
+     
+          </div>  
+        </div>
+      </div>
+      </div>
+    
     <!-- script starts -->
     <script>
     // Data retrieved from https://olympics.com/en/olympic-games/beijing-2022/medals 
@@ -1617,7 +1710,50 @@
     <!-- SCRIPTS ENDS -->
     <!-- SVG Collections -->
     <svg style="display: none">
-      <defs>
+      <defs> 
+        
+        <g id="fees-reminder-svg">
+        <path d="M9.82917 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6992 2.5 16.2753 2.5 15.8333V5.83329C2.5 5.39127 2.67559 4.96734 2.98816 4.65478C3.30072 4.34222 3.72464 4.16663 4.16667 4.16663H14.1667C14.6087 4.16663 15.0326 4.34222 15.3452 4.65478C15.6577 4.96734 15.8333 5.39127 15.8333 5.83329V9.16663"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.5 2.5V5.83333"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.83398 2.5V5.83333"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M2.5 9.16663H15.8333"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.582 12.5C14.582 12.2789 14.6698 12.067 14.8261 11.9107C14.9824 11.7544 15.1943 11.6666 15.4154 11.6666C15.6364 11.6666 15.8483 11.7544 16.0046 11.9107C16.1609 12.067 16.2487 12.2789 16.2487 12.5C16.7272 12.7262 17.1351 13.0784 17.4287 13.5188C17.7223 13.9592 17.8905 14.4712 17.9153 14.9999V16.2499C17.9467 16.509 18.0384 16.7571 18.1832 16.9742C18.3279 17.1913 18.5216 17.3714 18.7487 17.4999H12.082C12.3091 17.3714 12.5028 17.1913 12.6475 16.9742C12.7923 16.7571 12.884 16.509 12.9154 16.2499V14.9999C12.9402 14.4712 13.1084 13.9592 13.402 13.5188C13.6956 13.0784 14.1035 12.7262 14.582 12.5Z"  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.166 17.5V17.9167C14.166 18.2482 14.2977 18.5661 14.5321 18.8005C14.7666 19.035 15.0845 19.1667 15.416 19.1667C15.7475 19.1667 16.0655 19.035 16.2999 18.8005C16.5343 18.5661 16.666 18.2482 16.666 17.9167V17.5"  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19.1661 13.2195C18.8928 12.6251 18.4959 12.0957 18.002 11.6666"  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11.666 13.2195C11.9391 12.6251 12.3357 12.0957 12.8293 11.6666"  stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+   
+        
+        <!-- pending fees -->
+        <g id="pending-fee-svg">
+          <path
+            d="M13.7942 7.49999V5.83332C13.7942 5.3913 13.6276 4.96737 13.3311 4.65481C13.0346 4.34225 12.6325 4.16666 12.2132 4.16666H4.30807C3.88876 4.16666 3.48662 4.34225 3.19012 4.65481C2.89362 4.96737 2.72705 5.3913 2.72705 5.83332V10.8333C2.72705 11.2754 2.89362 11.6993 3.19012 12.0118C3.48662 12.3244 3.88876 12.5 4.30807 12.5H5.88909"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M15.3753 7.5H7.47018C6.59701 7.5 5.88916 8.24619 5.88916 9.16667V14.1667C5.88916 15.0871 6.59701 15.8333 7.47018 15.8333H15.3753C16.2484 15.8333 16.9563 15.0871 16.9563 14.1667V9.16667C16.9563 8.24619 16.2484 7.5 15.3753 7.5Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.4228 13.3333C12.296 13.3333 13.0038 12.5871 13.0038 11.6667C13.0038 10.7462 12.296 10 11.4228 10C10.5496 10 9.8418 10.7462 9.8418 11.6667C9.8418 12.5871 10.5496 13.3333 11.4228 13.3333Z"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+
+
+        <!-- print fees button --> 
+        <g id="print-svg">
+        <path d="M14.1667 14.1667H15.8333C16.2754 14.1667 16.6993 13.9911 17.0118 13.6785C17.3244 13.366 17.5 12.942 17.5 12.5V9.16667C17.5 8.72464 17.3244 8.30072 17.0118 7.98816C16.6993 7.6756 16.2754 7.5 15.8333 7.5H4.16667C3.72464 7.5 3.30072 7.6756 2.98816 7.98816C2.67559 8.30072 2.5 8.72464 2.5 9.16667V12.5C2.5 12.942 2.67559 13.366 2.98816 13.6785C3.30072 13.9911 3.72464 14.1667 4.16667 14.1667H5.83333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M14.1663 7.5V4.16667C14.1663 3.72464 13.9907 3.30072 13.6782 2.98816C13.3656 2.67559 12.9417 2.5 12.4997 2.5H7.49967C7.05765 2.5 6.63372 2.67559 6.32116 2.98816C6.0086 3.30072 5.83301 3.72464 5.83301 4.16667V7.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M5.83301 12.5C5.83301 12.058 6.0086 11.6341 6.32116 11.3215C6.63372 11.0089 7.05765 10.8333 7.49967 10.8333H12.4997C12.9417 10.8333 13.3656 11.0089 13.6782 11.3215C13.9907 11.6341 14.1663 12.058 14.1663 12.5V15.8333C14.1663 16.2754 13.9907 16.6993 13.6782 17.0118C13.3656 17.3244 12.9417 17.5 12.4997 17.5H7.49967C7.05765 17.5 6.63372 17.3244 6.32116 17.0118C6.0086 16.6993 5.83301 16.2754 5.83301 15.8333V12.5Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </g> 
+
         <!-- dashboard -->
         <g id="dashboard-svg">
           <path
