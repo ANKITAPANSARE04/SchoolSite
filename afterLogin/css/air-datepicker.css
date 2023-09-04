@@ -500,7 +500,7 @@
     --adp-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --adp-font-size: 14px;
     --adp-width: 246px;
-    --adp-z-index: 100;
+    --adp-z-index: 10;
     --adp-padding: 4px;
     --adp-grid-areas:
         'nav'

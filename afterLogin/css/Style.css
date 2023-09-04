@@ -77,8 +77,8 @@ input[type='radio'] {
 }
 
 td {
-    padding: 7px;
-    vertical-align: middle;
+    padding: 4px;
+    vertical-align: top;
     height: 27px;
 }
 
@@ -169,7 +169,7 @@ nav::-webkit-scrollbar {
     top: 60px;
     /* height: 100vh; */
     height: 100%;
-    z-index: 99;
+    z-index: 999;
     background-color: #E6EAF0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -181,7 +181,19 @@ nav::-webkit-scrollbar {
 }
 
 .module-data-section {
-    margin: 75px 10px 10px 80px;
+    margin: 75px 10px 100px 80px;
+}
+
+.creadit-footer {
+    text-align: center;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 99;
+    margin-left: 50px;
 }
 
 .nav__cont:hover+.module-data-section {
@@ -437,7 +449,7 @@ a.btn-blue1:active {
 
 .table-container {
     overflow: auto;
-    /* height: 200px; */
+    /* height: 250px; */
 }
 
 .table-container table thead {
@@ -918,7 +930,7 @@ summary input.default:checked {
     margin: 0;
     box-sizing: border-box;
     border-radius: 0 0 5px 5px;
-    max-height: 200px;
+    max-height: 150px;
     overflow-y: auto;
     list-style-type: none;
     color: #13304C;
@@ -1144,7 +1156,7 @@ li {
     margin: 15px auto;
 }
 
-.id-card-block .text-center {
+.id-card-block .id-card-avatar {
     margin: auto;
     padding: 10px;
     background: rgba(190, 202, 219, 0.4);
@@ -1204,6 +1216,7 @@ li {
 
 .tbl-details table {
     width: 100%;
+    /* border-collapse: separate; */
     color: #212529;
 }
 
@@ -1211,12 +1224,14 @@ li {
     background-color: #BECADB;
 }
 
-.tbl-details tr td:first-child {
+.tbl-details tr td:first-child,
+tr td:first-child {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-.tbl-details tr td:last-child {
+.tbl-details tr td:last-child,
+tr td:last-child {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -1261,6 +1276,10 @@ li {
     min-width: 300px;
     max-width: 750px;
     margin: 0 auto;
+}
+
+.table-condensed tbody tr td {
+    background-color: #F2F4F7 !important;
 }
 
 .table-condensed td:last-child {
@@ -1308,7 +1327,7 @@ li {
 
 .student-edit-div1 .edit-img {
     position: absolute;
-    top: 47%;
+    top: 43%;
     left: 20px;
     background: rgba(190, 202, 219, 0.4);
     padding: 5px;
@@ -1356,17 +1375,18 @@ li {
 
 .student-edit-select ul {
     width: 100.7%;
-    background: #ddd;
+    background: #E6EAF0;
     position: absolute;
     left: -1px;
     top: 39px;
-    padding: 5px;
+    padding: 3px 1rem 7px 1rem;
     margin: 0;
     box-sizing: border-box;
     border-radius: 0 0 5px 5px;
     max-height: 200px;
     overflow-y: auto;
     list-style-type: none;
+    color: #13304C;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 19px 39px -48px inset, rgba(0, 0, 0, 0.3) 0px 18px 43px -31px inset;
 }
 
@@ -1457,13 +1477,15 @@ li {
 
 .upload-avatar .round-avatar input[type="file"] {
     position: absolute;
-    transform: scale(2);
+    cursor: pointer;
+    /* transform: scale(2); */
     opacity: 0;
 }
 
 .round.avatar .material-symbols-outlined {
     display: inline-block;
     font-size: inherit;
+    cursor: pointer;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1509,7 +1531,10 @@ textarea::placeholder {
     display: none;
     margin-left: auto;
     padding: 10px 20px;
-    background-color: white;
+    background-color: #f1f2f5;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .edit-img-input:hover {
@@ -1530,16 +1555,6 @@ textarea::placeholder {
 
 .creadit-footer img {
     width: 30px;
-}
-
-.creadit-footer {
-    text-align: center;
-    padding: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em;
-    position: fixed;
-    bottom: 0;
-    background-color: white;
-    width: 100%;
 }
 
 /* student style end */
@@ -1565,7 +1580,7 @@ textarea::placeholder {
 }
 
 .tt-div {
-    height: 400px;
+    height: 740px;
     overflow: auto;
 }
 
@@ -1631,7 +1646,7 @@ textarea::placeholder {
     position: sticky;
     left: 0;
     background: white;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .tt-div caption {
@@ -1656,22 +1671,49 @@ textarea::placeholder {
 
 /* parent details below */
 
-.details-div {
+.details-div,
+.parent-details-div {
     background-color: #E6EAF0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     color: #24548C;
     padding: 20px;
-    margin: 0;
     border-radius: 8px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 10px 20px 10px 0;
 }
 
 .details-div img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+}
+
+.details-div.text-decoration-none:hover {
+    margin-top: -1px;
+    background-color: #d3dae3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.parent-details-div .img-name-div {
+    display: flex;
+    position: absolute;
+    left: 20px;
+    top: -60px
+}
+
+.parent-details-div .img-name-div img {
+    height: 130px;
+    width: 130px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.7) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -3px 0px inset;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.parent-details-div .img-name-div h5 {
+    margin-top: 75px;
+    font-weight: bold;
+    margin-left: 30px;
 }
 
 /* parent details above */
