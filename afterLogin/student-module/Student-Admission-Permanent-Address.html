@@ -130,156 +130,157 @@
     </form>
   </nav>
 
-  <!-- sidebar -->
-  <nav class="nav__cont">
-    <div class="nav">
-      <!-- dashboard -->
-      <a href="#" class="nav__items">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#dashboard-svg"></use>
-        </svg> 
-          <p class="sidebar-link" > Dashboard </p> 
-      </a>
-
-      <!-- students -->
-      <a class="nav__items active" href="./Student-Listpage.html" >
-        <!-- <div class="nav__items "> -->
+    <!-- sidebar -->
+    <nav class="nav__cont">
+      <div class="nav">
+        <!-- dashboard -->
+        <a href="#" class="nav__items">
           <svg viewBox="0 0 20 20">
-            <use xlink:href="#students-svg"></use>
+            <use xlink:href="#dashboard-svg"></use>
           </svg> 
-            <p class="sidebar-link" > Students </p> 
-        <!-- </div>  -->
-      </a>
+            <p class="sidebar-link" > Dashboard </p> 
+        </a>
 
-      <!-- teachers -->
-      <a class="nav__items" href="../Teacher-Module/Teacher-Listpage.html">
-        <svg viewBox="0 0 21 21">
-          <use xlink:href="#teacher-svg"></use>
-        </svg> 
-          <p class="sidebar-link" > Teachers </p> 
-      </a>
+        <!-- students -->
+        <a class="nav__items active" href="./Student-Listpage.html" >
+          <!-- <div class="nav__items "> -->
+            <svg viewBox="0 0 20 20">
+              <use xlink:href="#students-svg"></use>
+            </svg> 
+              <p class="sidebar-link" > Students </p> 
+          <!-- </div>  -->
+        </a>
 
-      <!-- parents -->
-      <a href="../Teacher-Module/Parents-Guardian-Listpage.html" class="nav__items">
-        <svg viewBox="0 0 19 19">
-          <use xlink:href="#parent-svg"></use>
-        </svg> 
-          <p class="sidebar-link"> Parents </p> 
-      </a>
+        <!-- teachers -->
+        <a class="nav__items" href="../Teacher-Module/Teacher-Listpage.html">
+          <svg viewBox="0 0 21 21">
+            <use xlink:href="#teacher-svg"></use>
+          </svg> 
+            <p class="sidebar-link" > Teachers </p> 
+        </a>
 
-      <!-- classroom -->
-      <a href="#" class="nav__items">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#classroom-svg"></use>
-        </svg> 
-          <p class="sidebar-link " href=""> Classroom </p> 
-      </a>
+        <!-- parents -->
+        <a href="../Teacher-Module/Parents-Guardian-Listpage.html" class="nav__items">
+          <svg viewBox="0 0 19 19">
+            <use xlink:href="#parent-svg"></use>
+          </svg> 
+            <p class="sidebar-link"> Parents </p> 
+        </a>
 
-      <!-- attendance -->
-      <div class="nav__items" id="attendance-togg-icon">
-        <svg viewBox="0 0 20 20" >
-          <use xlink:href="#attendance-svg"></use>
-        </svg> 
-          <p class="sidebar-link " href=""> Attendance <span class="float-end rotate" >></span> </p> 
-      </div> 
-      <!-- attendance dropdown --> 
-      <div id="attendance-dd" class="sidebar-submenu w-75 mb-2 mt-0">
-        <!-- <p class="sidebar-link"><a class="ps-1" href=""> > Students</a></p> -->
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Students</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Teachers</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staffs</a></p>
-      </div>
+        <!-- classroom -->
+        <a href="../Classroom-TimeTable-Module/Classroom-Listpage.html" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#classroom-svg"></use>
+          </svg> 
+            <p class="sidebar-link "> Classroom </p> 
+        </a>
 
-      <!-- daily timtable -->
-      <a href="#" class="nav__items">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#dtt-svg"></use>
-        </svg> 
-          <p class="sidebar-link " href=""> Daily Timetable </p> 
-      </a>
+        <!-- attendance -->
+        <div class="nav__items" id="attendance-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#attendance-svg"></use>
+          </svg> 
+            <p class="sidebar-link " > Attendance <span class="float-end rotate" >></span> </p> 
+        </div> 
+        <!-- attendance dropdown --> 
+        <div id="attendance-dd" class="sidebar-submenu w-75 mb-2 mt-0">
+          <!-- <p class="sidebar-link"><a class="ps-1" href=""> > Students</a></p> -->
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Attendance-Module/Student-Attendace.html"> Students</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Attendance-Module/Teacher-Attendace.html"> Teachers</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staffs</a></p>
+        </div>
 
-      <!-- Financial -->
-      <div class="nav__items"  id="fin-togg-icon">
-        <svg viewBox="0 0 20 20" id="fin-togg-icon">
-          <use xlink:href="#finance-svg"></use>
-        </svg> 
-          <p class="sidebar-link d-flex justify-content-between" href="">
-            Financial <span class="float-end rotate" >></span> 
-          </p> 
-      </div>
-      <!-- finance dropdown -->
-      <div id="fin-dd" class="sidebar-submenu">
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fees</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Expense</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Other Income</a></p>         
-      </div>
+        <!-- daily timtable -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#dtt-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Daily Timetable </p> 
+        </a>
 
-      <!-- Exam -->
-      <div class="nav__items" id="exm-togg-icon">
-        <svg viewBox="0 0 20 20" >
-          <use xlink:href="#exam-svg"></use>
-        </svg> 
-          <p class="sidebar-link " href=""> Exam  <span class="float-end rotate" >></span> </p> 
-      </div>
-      <!-- exam dropdown -->
-      <div id="exm-dd" class="sidebar-submenu">
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Timetable</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Result</a></p>
-      </div>
+        <!-- Financial -->
+        <div class="nav__items"  id="fin-togg-icon">
+          <svg viewBox="0 0 20 20" id="fin-togg-icon">
+            <use xlink:href="#finance-svg"></use>
+          </svg> 
+            <p class="sidebar-link d-flex justify-content-between" href="">
+              Financial <span class="float-end rotate" >></span> 
+            </p> 
+        </div>
+        <!-- finance dropdown -->
+        <div id="fin-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fees</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Expense</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Other Income</a></p>         
+        </div>
 
-      <!-- communication -->
-      <div class="nav__items"  id="cmun-togg-icon">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#communication-svg"></use>
-        </svg>
-        <p class="sidebar-link " href=""> Communication  <span class="float-end rotate" >></span> </p> 
-      </div>
-      <!-- communication dropdown -->
-      <div id="cmun-dd" class="sidebar-submenu">
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Notice</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Events</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> SMS</a></p>
-      </div>
+        <!-- Exam -->
+        <div class="nav__items" id="exm-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#exam-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Exam  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- exam dropdown -->
+        <div id="exm-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Timetable</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Result</a></p>
+        </div>
 
-      <!-- Inventory -->
-      <div class="nav__items"  id="inv-togg-icon">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#inventory-svg"></use>
-        </svg> 
-        <p class="sidebar-link " href=""> Inventory  <span class="float-end rotate" >></span> </p> 
-      </div>
-      <!-- Inv dropdown -->
-      <div id="inv-dd" class="sidebar-submenu">
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Master</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> In/Out</a></p>
-      </div>
+        <!-- communication -->
+        <div class="nav__items"  id="cmun-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#communication-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Communication  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- communication dropdown -->
+        <div id="cmun-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Notice</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Events</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> SMS</a></p>
+        </div>
 
-      <!-- academic -->
-      <a href="#" class="nav__items">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#academic-svg"></use>
-        </svg> 
-          <p class="sidebar-link " href=""> Academic </p>      
-      </a>
+        <!-- Inventory -->
+        <div class="nav__items"  id="inv-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#inventory-svg"></use>
+          </svg> 
+          <p class="sidebar-link " href=""> Inventory  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- Inv dropdown -->
+        <div id="inv-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Master</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> In/Out</a></p>
+        </div>
 
-      <!-- setting -->
-      <div class="nav__items" id="sett-togg-icon">
-        <svg viewBox="0 0 20 20">
-          <use xlink:href="#setting-svg"></use>
-        </svg>
-        <p class="sidebar-link " href=""> Setting  <span class="float-end rotate" >></span> </p> 
+        <!-- academic -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#academic-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Academic </p>      
+        </a>
+
+        <!-- setting -->
+        <div class="nav__items" id="sett-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#setting-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Setting  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- sett dropdown -->
+        <div id="sett-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
+        </div>
       </div>
-      <!-- sett dropdown -->
-      <div id="sett-dd" class="sidebar-submenu">
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
-        <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
-      </div>
-    </div>
-  </nav>
-  <!-- sidebar ends here -->
+    </nav>
+    <!-- sidebar ends here -->
+  
     <!-- student list page start -->
 
     <div class="module-data-section">

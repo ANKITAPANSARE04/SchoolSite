@@ -281,186 +281,158 @@
     </nav>
     <!-- sidebar ends here -->
   
-    <!-- student list page start -->
+    
+    <!-- sidebar -->
+    <nav class="nav__cont">
+      <div class="nav">
+        <!-- dashboard -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#dashboard-svg"></use>
+          </svg> 
+            <p class="sidebar-link" > Dashboard </p> 
+        </a>
 
-    <div class="module-data-section">
-      <p class="fw-bold">Teachers</p>
-      <h5 class="fw-bold">Registration</h5>
+        <!-- students -->
+        <a class="nav__items" href="../student-module/Student-Listpage.html" >
+          <!-- <div class="nav__items "> -->
+            <svg viewBox="0 0 20 20">
+              <use xlink:href="#students-svg"></use>
+            </svg> 
+              <p class="sidebar-link" > Students </p> 
+          <!-- </div>  -->
+        </a>
 
-      <div class="studenet-admission-section">
-        <!-- progressbar stepper --> 
-        <section class="step-wizard">
-        <ul class="step-wizard-list">
-            <li class="step-wizard-item completed-item">
-                <span class="progress-count">1</span>
-                <span class="progress-label">Basic</span>
-            </li>
-            <li class="step-wizard-item completed-item">
-                <span class="progress-count">2</span>
-                <span class="progress-label">Address</span>
-            </li>
-            <li class="step-wizard-item completed-item">
-                <span class="progress-count">3</span>
-                <span class="progress-label">Employment</span>
-            </li>
-            <li class="step-wizard-item current-item">
-                <span class="progress-count">4</span>
-                <span class="progress-label">Additional</span>
-            </li>
-            <li class="step-wizard-item">
-                <span class="progress-count">4</span>
-                <span class="progress-label">Experience</span>
-            </li>
-            <li class="step-wizard-item">
-                <span class="progress-count">4</span>
-                <span class="progress-label">Bank</span>
-            </li>
-            <li class="step-wizard-item">
-                <span class="progress-count">4</span>
-                <span class="progress-label">Attachments</span>
-            </li>
-        </ul>
-        </section>
+        <!-- teachers -->
+        <a class="nav__items active" href="./Teacher-Listpage.html">
+          <svg viewBox="0 0 21 21">
+            <use xlink:href="#teacher-svg"></use>
+          </svg> 
+            <p class="sidebar-link" > Teachers </p> 
+        </a>
 
- 
-        <!-- basic details input fields -->
-        <div class="row mx-3">
-          <div class="col-lg-5 col-md-5 col-sm-12">
-            <b>Additional Details</b>
-          </div> 
-        </div>
-        <div class="row mx-3 my-2">  
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Father Name </p>  
-            <input type="text" placeholder="Enter Father Name" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Father Mobile Number </p>   
-            <input type="number" maxlength="10" placeholder="Enter Mobile Number"
-          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Mother Name </p>  
-            <input type="text" placeholder="Enter Mother Name" />
-          </div> 
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Mother Mobile Number</p>   
-            <input type="number" maxlength="10" placeholder="Enter Mobile Number"
-          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Emergency Contact Name<span class="text-danger">*</span> </p>
-            <input type="text" placeholder="Enter Name" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Emergency Contact Number<span class="text-danger">*</span> </p>
-            <input type="number" maxlength="10" placeholder="Enter Mobile Number"
-          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Marital Status<span class="text-danger">*</span> </p>  
-            <details class="custom-select">
-              <summary class="radios">
-                <input type="radio" name="mstat" class="default" title="Select Marital Status" checked>
-                <input type="radio" name="mstat" id="ms1" title="Single">
-                <input type="radio" name="mstat" id="ms2" title="Married"> 
-                <input type="radio" name="mstat" id="ms3" title="Widow/Widower">  
-              </summary>
-              <ul class="list">
-                <li>
-                  <label for="ms1"> Single </label>
-                </li>
-                <li>
-                  <label for="ms2">Married</label>
-                </li>
-                <li>
-                  <label for="ms3">Widow/Widower</label>
-                </li> 
-              </ul>
-            </details> 
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Spouse Name</p>  
-            <input type="text" placeholder="Enter Spouse Name" />
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Religion<span class="text-danger">*</span> </p>  
-              <details class="custom-select">
-                <summary class="radios">
-                  <input type="radio" name="relig" class="default" title="Select Religion" checked>
-                  <input type="radio" name="relig" id="hindu" title="Hindu">
-                  <input type="radio" name="relig" id="sikh" title="Sikh"> 
-                  <input type="radio" name="relig" id="musm" title="Muslim"> 
-                  <input type="radio" name="relig" id="chri" title="Christian">  
-                </summary>
-                <ul class="list">
-                  <li>
-                    <label for="hindu"> Hindu </label>
-                  </li>
-                  <li>
-                    <label for="sikh">Sikh</label>
-                  </li>
-                  <li>
-                    <label for="musm">Muslim</label>
-                  </li>
-                  <li>
-                    <label for="chri">Christian</label>
-                  </li> 
-                </ul>
-              </details> 
-          </div>
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Cast<span class="text-danger">*</span> </p>     
-              <details class="custom-select">
-                <summary class="radios">
-                  <input type="radio" name="cast" class="default" title="Select Cast" checked>
-                  <input type="radio" name="cast" id="c1" title="General">
-                  <input type="radio" name="cast" id="c2" title="OBC"> 
-                  <input type="radio" name="cast" id="c3" title="SC"> 
-                  <input type="radio" name="cast" id="c4" title="ST">  
-                </summary>
-                <ul class="list">
-                  <li>
-                    <label for="c1">General </label>
-                  </li>
-                  <li>
-                    <label for="c2">OBC</label>
-                  </li> 
-                  <li>
-                    <label for="c3">SC</label>
-                  </li> 
-                  <li>
-                    <label for="c4">ST</label>
-                  </li> 
-                </ul>
-              </details>  
-          </div>  
-          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 p-2">
-            <p class="m-0">Mother Tongue</p>
-            <input type="text" placeholder="Enter Mother Tongue " />
-          </div> 
+        <!-- parents -->
+        <a href="./Parents-Guardian-Listpage.html" class="nav__items">
+          <svg viewBox="0 0 19 19">
+            <use xlink:href="#parent-svg"></use>
+          </svg> 
+            <p class="sidebar-link"> Parents </p> 
+        </a>
+
+        <!-- classroom -->
+        <a href="../Classroom-TimeTable-Module/Classroom-Listpage.html" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#classroom-svg"></use>
+          </svg> 
+            <p class="sidebar-link " > Classroom </p> 
+        </a>
+
+        <!-- attendance -->
+        <div class="nav__items" id="attendance-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#attendance-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Attendance <span class="float-end rotate" >></span> </p> 
+        </div> 
+        <!-- attendance dropdown --> 
+        <div id="attendance-dd" class="sidebar-submenu w-75 mb-2 mt-0">
+          <!-- <p class="sidebar-link"><a class="ps-1" href=""> > Students</a></p> -->
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Attendance-Module/Student-Attendace.html"> Students</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Attendance-Module/Teacher-Attendace.html"> Teachers</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Attendance-Module/Staff-Attendace.html"> Staffs</a></p>
         </div>
 
-        
-        <div class="text-center my-3 pb-5">
-          <a  class="btn-blue2 p-2 " href="./Teacher-Register-Employment.html">
-            <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_back </small>
-            Previous
-          </a>
-          <a  class="btn-blue2 px-4 py-2 " href="./Teacher-Register-PreviousExperience.html">
-            Next
-            <small class="material-symbols-outlined align-text-top fw-normal fs-5"> arrow_forward </small>
-          </a>
-        </div>
-<!-- 
-        <div class="text-center">
-        <button class="btn-blue1 px-4 ">Next</button>
-        </div> -->
+        <!-- daily timtable -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#dtt-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Daily Timetable </p> 
+        </a>
 
+        <!-- Financial -->
+        <div class="nav__items"  id="fin-togg-icon">
+          <svg viewBox="0 0 20 20" id="fin-togg-icon">
+            <use xlink:href="#finance-svg"></use>
+          </svg> 
+            <p class="sidebar-link d-flex justify-content-between" href="">
+              Financial <span class="float-end rotate" >></span> 
+            </p> 
+        </div>
+        <!-- finance dropdown -->
+        <div id="fin-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fees</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Expense</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Other Income</a></p>         
+        </div>
+
+        <!-- Exam -->
+        <div class="nav__items" id="exm-togg-icon">
+          <svg viewBox="0 0 20 20" >
+            <use xlink:href="#exam-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Exam  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- exam dropdown -->
+        <div id="exm-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Timetable</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Result</a></p>
+        </div>
+
+        <!-- communication -->
+        <div class="nav__items"  id="cmun-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#communication-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Communication  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- communication dropdown -->
+        <div id="cmun-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Notice</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Events</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> SMS</a></p>
+        </div>
+
+        <!-- Inventory -->
+        <div class="nav__items"  id="inv-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#inventory-svg"></use>
+          </svg> 
+          <p class="sidebar-link " href=""> Inventory  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- Inv dropdown -->
+        <div id="inv-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Master</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> In/Out</a></p>
+        </div>
+
+        <!-- academic -->
+        <a href="#" class="nav__items">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#academic-svg"></use>
+          </svg> 
+            <p class="sidebar-link " href=""> Academic </p>      
+        </a>
+
+        <!-- setting -->
+        <div class="nav__items" id="sett-togg-icon">
+          <svg viewBox="0 0 20 20">
+            <use xlink:href="#setting-svg"></use>
+          </svg>
+          <p class="sidebar-link " href=""> Setting  <span class="float-end rotate" >></span> </p> 
+        </div>
+        <!-- sett dropdown -->
+        <div id="sett-dd" class="sidebar-submenu">
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Fee Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Salary Setup</a></p>
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href=""> Holidays</a></p> 
+          <p class=" mt-1 mb-0  p-2"><a class="sidebar-link"  href="../Staff-Module/Staff-Listpage.html"> Staff</a></p> 
+        </div>
       </div>
-    </div>
-    <!-- student list page end -->
-
+    </nav>
+    <!-- sidebar ends here -->
+  
     <footer class="creadit-footer fs-6">
       Power by <img src="../imgs/ST-logo.svg" /> <span class="fw-bold" >SCHOOTECH</span>
     </footer>
