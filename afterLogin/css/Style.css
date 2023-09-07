@@ -659,6 +659,7 @@ input::-webkit-input-placeholder {
     color: #BECADB !important;
 }
 
+.modal-success-done,
 .print-div .print-search .id-print-found,
 .print-div .print-search .id-print-not-found {
     margin: 0 5px;
@@ -1717,6 +1718,376 @@ textarea::placeholder {
 }
 
 /* parent details above */
+
+/* attendance module below */
+
+.attendance-tbl {
+    width: auto;
+    height: 400px;
+    overflow: auto;
+    font-size: 14px !important;
+}
+
+.attendance-tbl table {
+    white-space: nowrap;
+    margin: 0;
+    border: none;
+    border-collapse: separate;
+    table-layout: fixed;
+}
+
+.attendance-tbl table td,
+.attendance-tbl table th {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.attendance-tbl table thead th {
+    border: 1px solid white;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    background-color: #BECADB;
+    min-width: 3vw;
+    font-weight: normal;
+    padding: 4px;
+}
+
+.attendance-tbl table tbody th {
+    font-weight: normal;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+.attendance-tbl table thead th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+}
+
+.attendance-tbl table tbody tr:nth-child(even),
+.attendance-tbl table tbody tr:nth-child(even) th {
+    background-color: #eef2f8;
+    text-align: center;
+}
+
+.attendance-tbl table tbody tr:nth-child(odd),
+.attendance-tbl table tbody tr:nth-child(odd) th {
+    background-color: #d9e2e6;
+    text-align: center;
+}
+
+.attendance-tbl input[type='radio'].present-radio {
+    accent-color: #50D300;
+    vertical-align: sub;
+    width: 9px;
+}
+
+.attendance-tbl input[type='radio'].absent-radio {
+    accent-color: #D20303;
+    vertical-align: top;
+    width: 9px;
+}
+
+
+.attendance-data {
+    vertical-align: middle;
+    padding: 2px 5px;
+}
+
+.attendance-tbl fieldset {
+    font-size: 10px;
+    display: none;
+}
+
+.attendance-date-dd-data {
+    display: none;
+}
+
+.attendance-date-dd-data ul {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    box-shadow: rgb(90 89 89 / 41%) -3px 4px 7px 0px inset;
+    border-radius: 0 0 5px 5px;
+    height: 140px;
+    overflow-y: scroll;
+    list-style: none;
+    position: absolute;
+    padding: 2px;
+    right: -2px;
+    top: 25px;
+    z-index: 1;
+    background-color: #E6EAF0;
+}
+
+.attendance-date-dd-data ul li {
+    margin: 3px;
+    padding: 0 3px;
+    z-index: -1;
+}
+
+.attendance-date-dd-data ul li:hover {
+    background-color: #24548C;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-state-2 {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgb(255 255 255) -2px -2px 3px 3px, rgb(60 60 60) 1px 1px 3px 1px;
+    border: 1px solid lightgray;
+}
+
+.attendance-filter.studenet-admission-section .custom-select ul {
+    height: 100px;
+}
+
+.save-edited {
+    background: #042954;
+    box-shadow: rgba(4, 41, 84, 1) 0px 0px 0px 9px;
+    color: white;
+    border-radius: 1px;
+    color: white;
+    cursor: pointer;
+}
+
+/* attendance module above */
+
+/* classroom below */
+.class-show-hide-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-left: 37px;
+}
+
+.class-show-hide-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E6EAF0;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #042954;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(19px);
+    -ms-transform: translateX(19px);
+    transform: translateX(19px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#inactive-classes {
+    display: none;
+}
+
+.table-title-btn {
+    color: white;
+    background-color: #24548C;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 4px !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.classrom-box table {
+    text-align: center;
+}
+
+.classrom-box .table-container {
+    box-shadow: rgba(0, 0, 0, 0.13) 4px 2px 4px;
+    ;
+    border-radius: 4px;
+}
+
+.classrom-box .table-container tr td:first-child {
+    border-top-left-radius: 4px;
+}
+
+.classrom-box .table-container tr td:last-child {
+    border-top-right-radius: 4px;
+}
+
+.classrom-box .table-container tr td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.classrom-box .table-container tr td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.classrom-box .table-container tr:first-child td {
+    border-top-style: solid;
+}
+
+.classrom-box .table-container tr td:first-child {
+    border-left-style: solid;
+}
+
+/* classroom details below */
+
+.show-more-data.edit-del {
+    padding: 10px 15px;
+    position: absolute;
+    background: #E6EAF0;
+    width: 150px;
+    right: 25px;
+    top: 0;
+    display: none;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.table-subject table tr td:nth-child(1) {
+    width: 35%;
+}
+
+.table-subject table tr td:nth-child(2) {
+    width: 25%;
+}
+
+.table-subject table tr td:nth-child(3) {
+    width: 20%;
+}
+
+.table-subject table tr td:nth-child(4) {
+    width: 20%;
+}
+
+.assign-teacher-bg {
+    background-image: url(../imgs/bg-network.png);
+    background-repeat: no-repeat;
+    background-position: 101% 73%;
+    background-size: 50%;
+}
+
+.btn-pending,
+.btn-complete {
+    box-shadow: rgb(255 0 0 / 62%) 0px 1px 9px 2px;
+    background-color: #D20303;
+    padding: 2px 15px;
+    margin: 0 20px 0 0;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+}
+
+.btn-complete {
+    background-color: #50D300;
+    box-shadow: rgba(50, 212, 1, 0.836) 0px 1px 9px 2px;
+}
+
+.on-off-toggler {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+}
+
+.on-off-toggler input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.on-off-toggler .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E6EAF0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.on-off-toggler .slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #50D300;
+    box-shadow: rgb(0, 0, 0) 3px 3px 3px -3px inset;
+
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+
+.on-off-toggler input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(20px);
+    background: #D20303
+}
+
+.on-off-toggler .slider.round {
+    border-radius: 34px;
+}
+
+.on-off-toggler .slider.round:before {
+    border-radius: 50%;
+}
+
+.class-teacher-avatar {
+    height: 40px;
+    width: 40px;
+    margin: auto 0;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.assign-teacher-bg {
+    background-image: url(../imgs/bg-network.png);
+    background-repeat: no-repeat;
+    background-position: 101% 73%;
+    background-size: 50%;
+}
+
+/* classroom above */
+
+
+
+
 
 
 
