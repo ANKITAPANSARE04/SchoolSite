@@ -194,3 +194,11 @@ input {
     padding: 10px 70px;
     margin: 10px 0;
 }
+
+
+/* @media only screen and (max-width: 1093){ 
+    .login-img{
+        background-img:url('./images/login-bg.svg');
+        repeat:no-repeat
+    }
+} */
