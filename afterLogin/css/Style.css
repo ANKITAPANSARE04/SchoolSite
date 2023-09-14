@@ -2212,3 +2212,18 @@ input:checked+.slider:before {
     }
 
 }
+
+@media only screen and (max-width: 572px) {
+    .nav__cont {
+        top: 92px;
+    }
+
+    nav.navbar {
+        background-image: url('../imgs/id-card-bg.svg');
+
+        background-size: cover;
+        background-position: 210px -221px;
+        background-repeat: no-repeat;
+
+    }
+}
